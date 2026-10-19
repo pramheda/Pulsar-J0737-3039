@@ -1,6 +1,6 @@
 # J0737−3039: wrong coordinates in Yu et al. (2026)
 
-**[Yu et al. (2026)](https://doi.org/10.3847/2041-8213/ae4bd1) give the wrong sky position for the double pulsar J0737−3039. They list a right ascension of 144.448°; the measured value is 114.4635°. Their coordinates put the pulsar 25.719° away from its measured position.**
+**[Yu et al. (2026)](https://doi.org/10.3847/2041-8213/ae4bd1) give the wrong sky position for the double pulsar J0737−3039. They list a right ascension of 144.448°; the measured value is 114.4635°. Their coordinates put the pulsar 25.719° away from its measured position. It is quite shocking that this error has passed peer-review in the Astrophysical Journal Letters**
 
 **Correcting only this position in our reconstruction removes the close past passes to Theia 58 and OC 0450 in the main simulations.** Those passes support the paper's proposed birthplace links. These links therefore need reassessment.
 
