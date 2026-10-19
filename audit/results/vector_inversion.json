@@ -1,0 +1,248 @@
+{
+  "scope": "Inversion of actual published vector centerline under MWPotential2014; post hoc diagnostic, not recovered execution inputs.",
+  "assumptions": [
+    "Path vertices are samples at a uniform interval; fitted interval checks this assumption.",
+    "The terminal Theia and OC vertices correspond to captioned7.43 and8.04Myr respectively; red terminal vertex shares OC8.04Myr. This is tested as an interpretation, not stated in source code.",
+    "Physical potential is MWPotential2014 withro8.122,vo220; source text does not identify all plotting settings."
+  ],
+  "results": [
+    {
+      "name": "binary",
+      "n_points": 30,
+      "inferred_time_spacing_myr": 0.04730281672064697,
+      "rms_curve_residual_pc": 0.0031765624782233003,
+      "fitted_initial_cartesian_kpc_and_kpc_per_myr": [
+        8.028445946098394,
+        -1.9417339918007426,
+        0.06582609633842171,
+        0.05273547393287959,
+        0.17114388913692616,
+        0.029744201378563068
+      ],
+      "assumed_last_lookback_myr": 8.04,
+      "inferred_first_lookback_myr": 6.668218315101237,
+      "inferred_present_galpy_cartesian_kpc_and_kpc_per_myr": [
+        8.247444890721443,
+        -0.7750731155760464,
+        0.2500602521810999,
+        0.01285885353995442,
+        0.17780672596235264,
+        0.024739088221375775
+      ],
+      "inferred_present_icrs_by_frame": {
+        "stated": {
+          "ra_deg": 144.52617413982802,
+          "dec_deg": -30.3733566217389,
+          "distance_kpc": 0.8179496935656465,
+          "pmra": -3.4849263322057675,
+          "pmdec": 1.4596514724241763,
+          "rv": 76.48823793264106
+        },
+        "schoenrich": {
+          "ra_deg": 144.52617413982802,
+          "dec_deg": -30.3733566217389,
+          "distance_kpc": 0.8179496935656465,
+          "pmra": -2.788353194786449,
+          "pmdec": 2.32282693912628,
+          "rv": 63.70099965014512
+        },
+        "schoenrich_z25": {
+          "ra_deg": 144.2880288183611,
+          "dec_deg": -30.574997463141248,
+          "distance_kpc": 0.8167842596935715,
+          "pmra": -2.7322076965459154,
+          "pmdec": 2.3891414549249053,
+          "rv": 63.70512919962009
+        }
+      },
+      "first_epoch_sensitivity": [
+        {
+          "assumed_first_lookback_myr": 4.0,
+          "ra_deg": 142.10165666422725,
+          "dec_deg": -40.92304568832932,
+          "distance_kpc": 1.2591997244850366,
+          "pmra": -3.4043270670635795,
+          "pmdec": 5.392365290064909,
+          "rv": 77.63620691324704
+        },
+        {
+          "assumed_first_lookback_myr": 5.0,
+          "ra_deg": 142.63792822577298,
+          "dec_deg": -37.77520404763082,
+          "distance_kpc": 1.0911409742168492,
+          "pmra": -3.3519157356392997,
+          "pmdec": 4.507640012850696,
+          "rv": 77.65861016212527
+        },
+        {
+          "assumed_first_lookback_myr": 6.0,
+          "ra_deg": 143.58262925682442,
+          "dec_deg": -33.77150347721757,
+          "distance_kpc": 0.925905169849461,
+          "pmra": -3.382414612277032,
+          "pmdec": 3.0264034607281807,
+          "rv": 77.22397813498783
+        },
+        {
+          "assumed_first_lookback_myr": 6.59,
+          "ra_deg": 144.39988327382918,
+          "dec_deg": -30.809891590584535,
+          "distance_kpc": 0.8304519690912183,
+          "pmra": -3.4680981450971013,
+          "pmdec": 1.6764580117225463,
+          "rv": 76.60069229143272
+        },
+        {
+          "assumed_first_lookback_myr": 7.0,
+          "ra_deg": 145.11571383463377,
+          "dec_deg": -28.385058859073254,
+          "distance_kpc": 0.765399800448797,
+          "pmra": -3.574456988671182,
+          "pmdec": 0.41593436495695424,
+          "rv": 75.9110348413807
+        },
+        {
+          "assumed_first_lookback_myr": 8.0,
+          "ra_deg": 147.5553593504444,
+          "dec_deg": -20.620029079462856,
+          "distance_kpc": 0.6134697407273018,
+          "pmra": -4.105685360025471,
+          "pmdec": -4.470142264923493,
+          "rv": 72.67600380756437
+        },
+        {
+          "assumed_first_lookback_myr": 9.0,
+          "ra_deg": 151.5082899620103,
+          "dec_deg": -8.575299237174182,
+          "distance_kpc": 0.47854397984029184,
+          "pmra": -5.383335157032361,
+          "pmdec": -13.920897113271685,
+          "rv": 64.77417419501968
+        },
+        {
+          "assumed_first_lookback_myr": 10.0,
+          "ra_deg": 158.24042300548385,
+          "dec_deg": 10.64093745182314,
+          "distance_kpc": 0.3795098720058239,
+          "pmra": -8.183433396414557,
+          "pmdec": -29.74375243919427,
+          "rv": 45.82207906960289
+        }
+      ],
+      "phase_free_skycheck": {
+        "first_lookback_range_myr": [
+          0,
+          24
+        ],
+        "minimum_angular_separation_from_primary_deg": 24.25195817295453,
+        "minimizing_first_lookback_myr": 4.950201554251545,
+        "minimum_galpy_z_kpc": 0.06582609633842171,
+        "scope": "Fixed potential and stated spatial frame; frees only temporal placement of the reconstructed red curve. Not a global optimization over plotting conventions."
+      }
+    },
+    {
+      "name": "Theia_58",
+      "n_points": 20,
+      "inferred_time_spacing_myr": 0.04728376040338071,
+      "rms_curve_residual_pc": 0.002412468277255519,
+      "fitted_initial_cartesian_kpc_and_kpc_per_myr": [
+        8.043290358982583,
+        -1.8744338544816936,
+        0.039749732966398714,
+        0.05976917173571736,
+        0.21687834069642514,
+        -0.002639786009840082
+      ],
+      "assumed_last_lookback_myr": 7.43,
+      "inferred_first_lookback_myr": 6.531608552335766,
+      "inferred_present_galpy_cartesian_kpc_and_kpc_per_myr": [
+        8.305747084459314,
+        -0.4359093873915989,
+        0.018670141843077304,
+        0.020486826644867992,
+        0.22243856054272848,
+        -0.003688811071030305
+      ],
+      "inferred_present_icrs_by_frame": {
+        "stated": {
+          "ra_deg": 119.77288799346681,
+          "dec_deg": -30.189608010944994,
+          "distance_kpc": 0.47306903287289903,
+          "pmra": -8.811346366239416,
+          "pmdec": 4.734642249526047,
+          "rv": 38.73829072995266
+        },
+        "schoenrich": {
+          "ra_deg": 119.77288799346681,
+          "dec_deg": -30.189608010944994,
+          "distance_kpc": 0.47306903287289903,
+          "pmra": -9.46146394494141,
+          "pmdec": 6.184213156677517,
+          "rv": 25.726086367306458
+        },
+        "schoenrich_z25": {
+          "ra_deg": 119.25922102564401,
+          "dec_deg": -30.461578143227026,
+          "distance_kpc": 0.47311118491690546,
+          "pmra": -9.348400606464285,
+          "pmdec": 6.275048569423179,
+          "rv": 25.82095454573126
+        }
+      },
+      "first_epoch_sensitivity": [],
+      "phase_free_skycheck": null
+    },
+    {
+      "name": "OC_0450",
+      "n_points": 30,
+      "inferred_time_spacing_myr": 0.04727453647789539,
+      "rms_curve_residual_pc": 0.0029461361079195785,
+      "fitted_initial_cartesian_kpc_and_kpc_per_myr": [
+        8.016248889865926,
+        -1.857134188434816,
+        0.017867799722315305,
+        0.046956880462421996,
+        0.23005395035237622,
+        -0.006029966916722429
+      ],
+      "assumed_last_lookback_myr": 8.04,
+      "inferred_first_lookback_myr": 6.669038442141033,
+      "inferred_present_galpy_cartesian_kpc_and_kpc_per_myr": [
+        8.194697688968848,
+        -0.3005941090296048,
+        -0.022868068465660037,
+        0.00635880999913252,
+        0.23545267984463344,
+        -0.005934690191709956
+      ],
+      "inferred_present_icrs_by_frame": {
+        "stated": {
+          "ra_deg": 117.35691086144374,
+          "dec_deg": -42.10143101020187,
+          "distance_kpc": 0.31233402907834523,
+          "pmra": -11.299678114835967,
+          "pmdec": 5.198012593114886,
+          "rv": 21.148666926765998
+        },
+        "schoenrich": {
+          "ra_deg": 117.35691086144374,
+          "dec_deg": -42.10143101020187,
+          "distance_kpc": 0.31233402907834523,
+          "pmra": -12.557166986236231,
+          "pmdec": 5.564008934634027,
+          "rv": 7.7976236019282865
+        },
+        "schoenrich_z25": {
+          "ra_deg": 116.45312403586988,
+          "dec_deg": -42.48002421728116,
+          "distance_kpc": 0.3129516257066844,
+          "pmra": -12.413798591677397,
+          "pmdec": 5.7136535815961285,
+          "rv": 7.958068343157599
+        }
+      },
+      "first_epoch_sensitivity": [],
+      "phase_free_skycheck": null
+    }
+  ]
+}

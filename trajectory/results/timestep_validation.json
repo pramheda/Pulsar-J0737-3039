@@ -1,0 +1,79 @@
+{
+  "published": {
+    "n": 1024,
+    "event_disagreements": 0,
+    "max_minimum_difference_pc": [
+      0.0,
+      0.0
+    ],
+    "max_interior_minimum_difference_pc": 0.0,
+    "max_time_difference_myr": [
+      9.5367431640625e-07,
+      1.9073486328125e-06
+    ],
+    "first1024_counts_step005": [
+      70,
+      148
+    ],
+    "first1024_counts_step0025": [
+      70,
+      148
+    ]
+  },
+  "corrected_coordinates": {
+    "n": 1024,
+    "event_disagreements": 0,
+    "max_minimum_difference_pc": [
+      0.0,
+      0.02288818359375
+    ],
+    "max_interior_minimum_difference_pc": 0.0,
+    "max_time_difference_myr": [
+      9.5367431640625e-07,
+      0.002498626708984375
+    ],
+    "first1024_counts_step005": [
+      0,
+      0
+    ],
+    "first1024_counts_step0025": [
+      0,
+      0
+    ]
+  },
+  "paired_inputs": {
+    "binary_distance_kpc": true,
+    "radial_heliocentric_kms": true,
+    "weight_uniform_heliocentric": true
+  },
+  "corrected_minima_global_pc": [
+    43.052547454833984,
+    64.50048828125
+  ],
+  "corrected_minima_quantiles_pc": [
+    [
+      43.052547454833984,
+      64.50048828125
+    ],
+    [
+      47.661396522521976,
+      68.36138969421387
+    ],
+    [
+      88.03453491210938,
+      88.30048767089843
+    ],
+    [
+      228.83377838134766,
+      374.0194854736328
+    ],
+    [
+      304.6680078125,
+      465.3732653808594
+    ],
+    [
+      496.2954406738281,
+      654.4147338867188
+    ]
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "source": "https://arxiv.org/pdf/2112.06795",
+  "locations": [
+    "TableII",
+    "TableIV"
+  ],
+  "name": "J0737-3039A/B",
+  "ra_hms": "07:37:51.248115",
+  "dec_dms": "-30:39:40.70485",
+  "ra_deg": 114.4635338125,
+  "dec_deg": -30.66130690277778,
+  "ra_error_seconds_of_time": 1e-05,
+  "dec_error_arcsec": 0.00017,
+  "position_epoch_MJD": 55045.0,
+  "equinox": "J2000; not position epoch",
+  "mu_ra_cosdec_masyr": -2.567,
+  "mu_ra_error_masyr": 0.03,
+  "mu_dec_masyr": 2.082,
+  "mu_dec_error_masyr": 0.038,
+  "combined_parallax_mas": 1.36,
+  "parallax_minus_mas": 0.1,
+  "parallax_plus_mas": 0.12,
+  "full_covariance_available_in_this_extraction": false,
+  "yu2026_table1": {
+    "ra_deg": 144.448,
+    "dec_deg": -30.6278,
+    "position_discrepancy_confirmed_in": "Local PDF page3Table1 andHTML",
+    "execution_impact": "The coordinate comparison establishes the table discrepancy; trajectory and figure evidence are documented separately in README.md.",
+    "manuscript_url": "https://arxiv.org/pdf/2602.14145v1",
+    "source_row_files": [
+      "sources/yu2026_table1_J0737.tex",
+      "sources/yu2026_table1_J0737.tsv"
+    ]
+  }
+}

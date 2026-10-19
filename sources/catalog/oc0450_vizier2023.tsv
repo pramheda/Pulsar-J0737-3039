@@ -1,0 +1,103 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-19T06:51:14 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-19T06:51:14	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/A%2bA/673/A114/clusters&-out.all&-out.max=10&Name=OC_0450	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+
+#RESOURCE=yCat_36730114
+#Name: J/A+A/673/A114
+#Title: Improving the open cluster census. II. (Hunt+, 2023)
+#INFO	ivoid=ivo://cds.vizier/j/a+a/673/a114	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/a+a/673/a114	    IVOID of underlying data collection
+#INFO	creator=Hunt E.L.	    First author or institution
+#INFO	cites=bibcode:2023A&A...673A.114H	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2023	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/673/A114	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier/bc-n1/lbbe	    Dataset identifier that can be used for citation
+#INFO	publication_date=2026-07-01	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	J_A_A_673_A114_clusters:
+#Name: J/A+A/673/A114/clusters
+#Title: Main catalogue (Table 3)
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Name	(a20)	Main accepted cluster name (1)	[ucd=meta.id;meta.main]
+#Column	ID	(I4)	? Internal cluster ID	[ucd=meta.id]
+#Column	AllNames	(a246)	Comma separated list of all crossmatched cluster names	[ucd=meta.id]
+#Column	Type	(A1)	[omg] Type of object (o: open cluster, m: moving group, g: globular cluster)	[ucd=src.class]
+#Column	CST	(F11.8)	[3/99] Astrometric SNR (cluster significance test) (G1)	[ucd=stat.snr]
+#Column	N	(I6)	[10/153797] Number of member stars	[ucd=meta.number]
+#Column	CSTt	(F11.8)	[2.9/99] Astrometric SNR within tidal radius (G1)	[ucd=stat.snr]
+#Column	Nt	(I5)	[10/53464] Number of stars within tidal radius	[ucd=meta.number]
+#Column	RA_ICRS	(F15.11)	Right ascension of densest point (ICRS) at Ep=2016.0	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F15.11)	Declination of densest point (ICRS) at Ep=2016.0	[ucd=pos.eq.dec;meta.main]
+#Column	GLON	(F12.8)	Galactic longitude	[ucd=pos.galactic.lon]
+#Column	GLAT	(E10.3)	Galactic latitude	[ucd=pos.galactic.lat]
+#Column	r50	(F11.8)	Radius containing 50% of members within the tidal radius	[ucd=phys.angSize]
+#Column	rc	(F11.8)	Core radius (approximate estimate)	[ucd=phys.angSize;src]
+#Column	rt	(F11.8)	Tidal radius (approximate estimate)	[ucd=phys.angSize;src]
+#Column	rtot	(F11.8)	Total radius (including tidal tails, coma, etc)	[ucd=phys.angSize]
+#Column	r50pc	(F13.8)	Radius containing 50% of members in parsecs	[ucd=phys.size.radius]
+#Column	rcpc	(F13.8)	Core radius in parsecs	[ucd=phys.size.radius]
+#Column	rtpc	(F13.8)	Tidal radius in parsecs	[ucd=phys.size.radius]
+#Column	rtotpc	(F13.8)	Total radius in parsecs	[ucd=phys.size.radius]
+#Column	pmRA	(F13.8)	Mean proper motion in right ascension multipled by cos(dec)	[ucd=pos.pm;pos.eq.ra]
+#Column	s_pmRA	(F11.8)	Standard deviation of pmRA	[ucd=stat.stdev;pos.pm;pos.eq.ra]
+#Column	e_pmRA	(F11.8)	Standard error of pmRA	[ucd=stat.error;pos.pm;pos.eq.ra]
+#Column	pmDE	(F12.8)	Mean proper motion in declination	[ucd=pos.pm;pos.eq.dec]
+#Column	s_pmDE	(F11.8)	Standard deviation of pmDE	[ucd=stat.stdev;pos.pm;pos.eq.dec]
+#Column	e_pmDE	(F11.8)	Standard error of pmDE	[ucd=stat.error;pos.pm;pos.eq.dec]
+#Column	Plx	(F12.8)	Mean parallax	[ucd=pos.parallax;stat.mean]
+#Column	s_Plx	(F11.8)	Standard deviation of parallax	[ucd=stat.stdev;pos.parallax]
+#Column	e_Plx	(F11.8)	Standard error of parallax	[ucd=stat.error;pos.parallax]
+#Column	dist16	(F15.8)	16th percentile of maximum likelihood distance	[ucd=pos.distance]
+#Column	dist50	(F15.8)	50th percentile of maximum likelihood distance	[ucd=pos.distance]
+#Column	dist84	(F16.8)	84th percentile of maximum likelihood distance	[ucd=pos.distance]
+#Column	Ndist	(I5)	Number of stars used for distance calculation	[ucd=meta.number]
+#Column	globalPlx	(I1)	[0/1] Flag indicating clusters for which a star-by-star parallax offset correction was not possible during distance calculation	[ucd=meta.code]
+#Column	X	(F16.8)	X coordinate in galactocentric galactic coordinates	[ucd=pos.cartesian.x;pos.galactocentric;pos.galactic]
+#Column	Y	(F16.8)	Y coordinate in galactocentric galactic coordinates	[ucd=pos.cartesian.y;pos.galactocentric;pos.galactic]
+#Column	Z	(F16.8)	Z coordinate in galactocentric galactic coordinates	[ucd=pos.cartesian.z;pos.galactocentric;pos.galactic]
+#Column	RV	(F13.8)	? Mean Gaia DR3 radial velocity	[ucd=phys.veloc;pos.heliocentric]
+#Column	s_RV	(F13.8)	? Standard deviation of radial velocity	[ucd=stat.stdev;spect.dopplerVeloc]
+#Column	e_RV	(F13.8)	? Standard error of radial velocity	[ucd=stat.error]
+#Column	n_RV	(I4)	Number of member stars with a radial velocity	[ucd=meta.note]
+#Column	CMDCl2.5	(E10.3)	[0/1] 2.5th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl16	(E10.3)	[0/1] 16th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl50	(F11.8)	[0/1] 50th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl84	(F11.8)	[0/1] 84th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl97.5	(F11.8)	[0/1] 97.5th percentile of CMD class	[ucd=meta.code]
+#Column	CMDClHuman	(A3)	Human-assigned CMD class (where available) (G2)	[ucd=meta.code]
+#Column	logAge16	(F11.8)	16th percentile of logarithm of cluster age	[ucd=time.age]
+#Column	logAge50	(F11.8)	50th percentile of logarithm of cluster age	[ucd=time.age]
+#Column	logAge84	(F11.8)	84th percentile of logarithm of cluster age	[ucd=time.age]
+#Column	AV16	(E10.3)	16th percentile of V-band cluster extinction	[ucd=phys.absorption]
+#Column	AV50	(F11.8)	50th percentile of V-band cluster extinction	[ucd=phys.absorption]
+#Column	AV84	(F11.8)	84th percentile of V-band cluster extinction	[ucd=phys.absorption]
+#Column	diffAV16	(E10.3)	16th percentile of approximate V-band differential extinction	[ucd=phys.absorption;arith.diff]
+#Column	diffAV50	(F11.8)	50th percentile of approximate V-band differential extinction	[ucd=phys.absorption;arith.diff]
+#Column	diffAV84	(F11.8)	84th percentile of approximate V-band differential extinction	[ucd=phys.absorption;arith.diff]
+#Column	MOD16	(F11.8)	16th percentile of photometrically estimated distance modulus	[ucd=phot.mag.distMod]
+#Column	MOD50	(F11.8)	50th percentile of photometrically estimated distance modulus	[ucd=phot.mag.distMod]
+#Column	MOD84	(F11.8)	84th percentile of photometrically estimated distance modulus	[ucd=phot.mag.distMod]
+#Column	minClSize	(I2)	[-1/80] HDBSCAN parameter used to construct cluster membership list (-1 for membership lists not made with HDBSCAN)	[ucd=meta.code.member;instr.setup]
+#Column	isMerged	(I1)	[0/1] Flag indicating manually merged cluster membership list	[ucd=meta.code]
+#Column	isGMMMemb	(I1)	[0/1] Flag indicating cluster membership list constructed using additional Gaussian mixture model post-processing step	[ucd=meta.code]
+#Column	NXmatches	(I2)	[0/23] Number of unique crossmatches to this cluster	[ucd=meta.number]
+#Column	XmatchType	(A3)	Type of crossmatch (G3)	[ucd=meta.code]
+#Column	_RA.icrs	(F15.11)	Right ascension (ICRS) at Epoch=J2000, proper motions taken into account	[ucd=pos.eq.ra]
+#Column	_DE.icrs	(F15.11)	Declination (ICRS) at Epoch=J2000, proper motions taken into account	[ucd=pos.eq.dec]
+recno	Name	ID	AllNames	Type	CST	N	CSTt	Nt	RA_ICRS	DE_ICRS	GLON	GLAT	r50	rc	rt	rtot	r50pc	rcpc	rtpc	rtotpc	pmRA	s_pmRA	e_pmRA	pmDE	s_pmDE	e_pmDE	Plx	s_Plx	e_Plx	dist16	dist50	dist84	Ndist	globalPlx	X	Y	Z	RV	s_RV	e_RV	n_RV	CMDCl2.5	CMDCl16	CMDCl50	CMDCl84	CMDCl97.5	CMDClHuman	logAge16	logAge50	logAge84	AV16	AV50	AV84	diffAV16	diffAV50	diffAV84	MOD16	MOD50	MOD84	minClSize	isMerged	isGMMMemb	NXmatches	XmatchType	_RA.icrs	_DE.icrs
+ 	 	 	 	 	 	 	 	 	deg	deg	deg	deg	deg	deg	deg	deg	pc	pc	pc	pc	mas/yr	mas/yr	mas/yr	mas/yr	mas/yr	mas/yr	mas	mas	mas	pc	pc	pc	 	 	pc	pc	pc	km/s	km/s	km/s	 	 	 	 	 	 	 	[yr]	[yr]	[yr]	mag	mag	mag	mag	mag	mag	mag	mag	mag	 	 	 	 	 	deg	deg
+--------	--------------------	----	------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	-	-----------	------	-----------	-----	---------------	---------------	------------	----------	-----------	-----------	-----------	-----------	-------------	-------------	-------------	-------------	-------------	-----------	-----------	------------	-----------	-----------	------------	-----------	-----------	---------------	---------------	----------------	-----	-	----------------	----------------	----------------	-------------	-------------	-------------	----	----------	----------	-----------	-----------	-----------	---	-----------	-----------	-----------	----------	-----------	-----------	----------	-----------	-----------	-----------	-----------	-----------	--	-	-	--	---	---------------	---------------
+    5016	OC_0450             	5015	OC_0450                                                                                                                                                                                                                                               	o	20.78641901	   398	21.20100005	  386	118.13779525000	-42.43187045000	256.99872131	-7.733e+00	 3.14495978	 6.28065049	 6.28065049	 7.06135655	  17.78204583	  35.61879234	  35.61879234	  40.08897663	 -11.39780711	 0.38349175	 0.01951922	  4.65864242	 0.33509463	 0.01705587	  3.05137269	 0.08046642	 0.00409563	   323.49901951	   323.63299508	    323.76708166	  306	0	  -8194.23130264	   -312.46851133	    -22.56514201	  10.13903664	   9.65658574	   1.00676866	  92	 9.855e-01	 9.969e-01	 0.99825808	 0.99997711	 0.99997711	   	 7.04045916	 7.33745623	 7.55690813	 6.226e-05	 0.10379671	 0.17487863	 3.067e-02	 0.47008701	 0.74197102	 7.35383606	 7.53936100	 7.69230604	80	0	0	 1	1:1	118.13786388338	-42.43189115506
+

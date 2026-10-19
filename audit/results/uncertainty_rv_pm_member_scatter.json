@@ -1,0 +1,48 @@
+{
+  "name": "rv_pm_member_scatter",
+  "n": 4096,
+  "position": "Primary timing coordinates with printed Yu PM/distance/errors",
+  "seed": 2026101909,
+  "radial_prior": "Zero-centered heliocentric 3-Gaussian mixture",
+  "cluster_error_inputs": [
+    {
+      "name": "Theia_58",
+      "distance_sigma_kpc": 0.00037191262999999706,
+      "pmra_sigma": 0.42352097,
+      "pmdec_sigma": 0.26460072,
+      "rv_sigma": 6.32728698,
+      "age_horizon_myr": 23.596731453322572
+    },
+    {
+      "name": "OC_0450",
+      "distance_sigma_kpc": 0.00013403107499999577,
+      "pmra_sigma": 0.38349175,
+      "pmdec_sigma": 0.33509463,
+      "rv_sigma": 9.65658574,
+      "age_horizon_myr": 21.749848189778067
+    }
+  ],
+  "counts": [
+    0,
+    1
+  ],
+  "probabilities": [
+    0.0,
+    0.000244140625
+  ],
+  "union_count": 1,
+  "minimum_pc": [
+    43.00418811033385,
+    52.46847957173266
+  ],
+  "binomial_upper95": [
+    0.0007311125564754341,
+    0.0011576408823709594
+  ],
+  "runtime_seconds": 9.653013189788908,
+  "limitations": [
+    "Member dispersion is not the uncertainty of the cluster mean; these branches test possible implementation ambiguity, not preferred measurement errors.",
+    "This is a bounded diagnostic, not a full posterior under cluster evolution or source covariance.",
+    "Grid minimum used; baseline convergence tests show grid effect negligible at5kyr for these thresholds."
+  ]
+}

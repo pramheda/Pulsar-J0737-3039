@@ -1,0 +1,139 @@
+{
+  "scope": "Reinterpretation of same retained printed-coordinate histories; no new observations or original execution.",
+  "definitions": [
+    "Closest point: one value per encounter history.",
+    "All inside time steps: every5kyr sample inside3r50, thereby duration-weighting histories."
+  ],
+  "limitation": "Paper does not unambiguously state which encounter-parameter summary statistic is used; agreement cannot prove implementation.",
+  "results": [
+    {
+      "cluster": "Theia_58",
+      "event_histories": 1725,
+      "inside_timestep_count": 339827,
+      "closest_history_quantiles": {
+        "minimum_pc": [
+          9.836715049743653,
+          17.93341827392578,
+          26.46754470825195
+        ],
+        "minimum_time_myr": [
+          6.479995136260986,
+          7.13628625869751,
+          7.840055122375488
+        ],
+        "radial_heliocentric_kms": [
+          47.504123341727436,
+          56.16618947383936,
+          65.28095897279007
+        ],
+        "binary_distance_kpc": [
+          0.6794444036558767,
+          0.7394772083908786,
+          0.8006000051869114
+        ]
+      },
+      "all_inside_timestep_quantiles": {
+        "time": [
+          6.515000000000001,
+          7.1850000000000005,
+          7.885
+        ],
+        "separation": [
+          15.28137228287167,
+          23.123961222803185,
+          28.757770980412058
+        ],
+        "relative_speed": [
+          39.33754736309566,
+          45.51952312296103,
+          52.90438099673732
+        ],
+        "rv": [
+          46.8944152469461,
+          54.66869054379225,
+          63.498024865282126
+        ],
+        "distance": [
+          0.6754870927439194,
+          0.7330470705163341,
+          0.7937028168168824
+        ],
+        "cluster_speed_relative_present_Sun": [
+          72.59140664945646,
+          76.48443958661372,
+          80.59291406842686
+        ],
+        "binary_speed_relative_present_Sun": [
+          79.43835350143151,
+          86.95405726760234,
+          94.44430390365059
+        ]
+      }
+    },
+    {
+      "cluster": "OC_0450",
+      "event_histories": 4514,
+      "inside_timestep_count": 1147337,
+      "closest_history_quantiles": {
+        "minimum_pc": [
+          16.666365814208984,
+          29.944432258605957,
+          45.93143417358399
+        ],
+        "minimum_time_myr": [
+          5.653080615997315,
+          7.262773275375366,
+          9.04864948272705
+        ],
+        "radial_heliocentric_kms": [
+          47.63312326213985,
+          62.06311743590952,
+          81.62833444681979
+        ],
+        "binary_distance_kpc": [
+          0.6805490436561642,
+          0.7405198582984815,
+          0.8009980177754212
+        ]
+      },
+      "all_inside_timestep_quantiles": {
+        "time": [
+          6.1450000000000005,
+          7.62,
+          9.115
+        ],
+        "separation": [
+          25.220024593085142,
+          39.132530105078985,
+          49.283243050024744
+        ],
+        "relative_speed": [
+          49.30041246128939,
+          59.80803256987029,
+          74.701954761637
+        ],
+        "rv": [
+          46.93975355255235,
+          58.50826238353246,
+          74.18463655574133
+        ],
+        "distance": [
+          0.6762817849784394,
+          0.7354383578232038,
+          0.7948727949801749
+        ],
+        "cluster_speed_relative_present_Sun": [
+          55.42900335156891,
+          63.997889944426866,
+          72.63273217380315
+        ],
+        "binary_speed_relative_present_Sun": [
+          85.87977093435086,
+          93.37202398701538,
+          101.5149814887109
+        ]
+      }
+    }
+  ],
+  "runtime_seconds": 20.646142716985196
+}

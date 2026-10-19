@@ -1,0 +1,460 @@
+{
+  "purpose": "Strictly scoped export of the J0737-3039 coordinate and two-cluster trajectory audit. No other investigations are included.",
+  "path_adaptations": "Only standalone import/output paths changed in copied numerical code; no physical equations, random seeds, input values or retained arrays changed.",
+  "files": [
+    {
+      "file": "trajectory/code/galactic_trace.py",
+      "original_artifact": "trajectory/code/galactic_trace.py",
+      "original_sha256": "c7d1864e5ae4a3c3b56123ff85928f69bcd1153961051d86df8a6bc9eb0e5d87",
+      "export_sha256": "acd568b07577c0678a0cb5af3bb990cbfb860ae637e8c4c50981183e623f2daf",
+      "adapted": true
+    },
+    {
+      "file": "trajectory/code/monte_carlo.py",
+      "original_artifact": "trajectory/code/monte_carlo.py",
+      "original_sha256": "cded8e3b45e57a28e9d24bc3072c7ddf17527c2780e664471c7a8b5d5cca7f23",
+      "export_sha256": "cded8e3b45e57a28e9d24bc3072c7ddf17527c2780e664471c7a8b5d5cca7f23",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/code/plot_results.py",
+      "original_artifact": "trajectory/code/plot_results.py",
+      "original_sha256": "f9ff8721ba3d39386f68b78b5968256dbcf54e10525a46a9fbcb51b74d79bd53",
+      "export_sha256": "f9ff8721ba3d39386f68b78b5968256dbcf54e10525a46a9fbcb51b74d79bd53",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/code/validate_saved.py",
+      "original_artifact": "trajectory/code/validate_saved.py",
+      "original_sha256": "c0f91b5512f2fd27408ab841c244a723f9b1bc98472b7d4cd744a0cf6e9b0bf9",
+      "export_sha256": "c0f91b5512f2fd27408ab841c244a723f9b1bc98472b7d4cd744a0cf6e9b0bf9",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/data/J0737_primary_position.json",
+      "original_artifact": "trajectory/data/J0737_primary_position.json",
+      "original_sha256": "2e7c63b6a2de3d1c125f348012c5eed4a220e6e8ddf7479996c04d56da17fcdf",
+      "export_sha256": "c09cad0de7b49ddedbe54eb16595094e110e12e890dd051aaba575704834449a",
+      "adapted": true,
+      "transformation": "Metadata links made standalone; primary numerical values unchanged."
+    },
+    {
+      "file": "trajectory/data/key_clusters.json",
+      "original_artifact": "trajectory/data/key_clusters.json",
+      "original_sha256": "0a6da94f0664bd579a1547f739a6267e9b0978536f00212e91ee45d2f153fb93",
+      "export_sha256": "0a6da94f0664bd579a1547f739a6267e9b0978536f00212e91ee45d2f153fb93",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/.galpyrc",
+      "original_artifact": "trajectory/.galpyrc",
+      "original_sha256": "62e2bbb7d1a3a18d818e21350058887f68d680bc225ff964df7e9850b4980e07",
+      "export_sha256": "62e2bbb7d1a3a18d818e21350058887f68d680bc225ff964df7e9850b4980e07",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/benchmark_published.json",
+      "original_artifact": "trajectory/results/benchmark_published.json",
+      "original_sha256": "aaa3a4dfd01a7cc4100678c51ad71561bd97ec41a0f88c7360aec6ac3c12395a",
+      "export_sha256": "aaa3a4dfd01a7cc4100678c51ad71561bd97ec41a0f88c7360aec6ac3c12395a",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/benchmark_timing.json",
+      "original_artifact": "trajectory/results/benchmark_timing.json",
+      "original_sha256": "52673b9c20494a8bd1a380aefd4ea53c68d88d8c9fbb04372c8ebddfad729219",
+      "export_sha256": "52673b9c20494a8bd1a380aefd4ea53c68d88d8c9fbb04372c8ebddfad729219",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/coordinate_effect.png",
+      "original_artifact": "trajectory/results/coordinate_effect.png",
+      "original_sha256": "c46bf49c07185816d8175ec78e9f58a278c63fe4afd2f2beac3ffe6b6fa71876",
+      "export_sha256": "c46bf49c07185816d8175ec78e9f58a278c63fe4afd2f2beac3ffe6b6fa71876",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/coordinate_effect.svg",
+      "original_artifact": "trajectory/results/coordinate_effect.svg",
+      "original_sha256": "3961a5ef7db368dc6dd070a4840060120222927e8acc61fdcc4b422d1c38b120",
+      "export_sha256": "3961a5ef7db368dc6dd070a4840060120222927e8acc61fdcc4b422d1c38b120",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n1024_step0.0025.json",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n1024_step0.0025.json",
+      "original_sha256": "560f87cc3c6253452f36db8f97cad6f9867988e43eb43f03c1a87854fa353417",
+      "export_sha256": "560f87cc3c6253452f36db8f97cad6f9867988e43eb43f03c1a87854fa353417",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n1024_step0.0025.npz",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n1024_step0.0025.npz",
+      "original_sha256": "1b0701871a651639f11130bad77c169426009bc00be315cc39d40e5820b7b3e4",
+      "export_sha256": "1b0701871a651639f11130bad77c169426009bc00be315cc39d40e5820b7b3e4",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n32768_step0.005.json",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n32768_step0.005.json",
+      "original_sha256": "1b93b56deb07ef0676141bd65658214eeecc39aa4b1df09992f1828e93353db9",
+      "export_sha256": "1b93b56deb07ef0676141bd65658214eeecc39aa4b1df09992f1828e93353db9",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n32768_step0.005.npz",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n32768_step0.005.npz",
+      "original_sha256": "947a46343684e84b7ed0666e853b50423c23da578d876f9e5ff6850ab1ada77c",
+      "export_sha256": "947a46343684e84b7ed0666e853b50423c23da578d876f9e5ff6850ab1ada77c",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n32768_step0.005_uniform_heliocentric.json",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n32768_step0.005_uniform_heliocentric.json",
+      "original_sha256": "6e5abdd9b5588dd42227f7ef433bc39a50b606dda7a39db8c51a6be557cf85c7",
+      "export_sha256": "6e5abdd9b5588dd42227f7ef433bc39a50b606dda7a39db8c51a6be557cf85c7",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n32768_step0.005_uniform_heliocentric.npz",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n32768_step0.005_uniform_heliocentric.npz",
+      "original_sha256": "6c3c6cf1ff56bc3089d9dbe2f68cbbb59a1e101807f099cdf5aecdffdf160222",
+      "export_sha256": "6c3c6cf1ff56bc3089d9dbe2f68cbbb59a1e101807f099cdf5aecdffdf160222",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_cauchy_peculiar_conditional.json",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_cauchy_peculiar_conditional.json",
+      "original_sha256": "fad0de59447518abb387fe33e4614d41c39e9cd8ca2fef033a2486aed6465046",
+      "export_sha256": "fad0de59447518abb387fe33e4614d41c39e9cd8ca2fef033a2486aed6465046",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_cauchy_peculiar_conditional.npz",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_cauchy_peculiar_conditional.npz",
+      "original_sha256": "42ea7cf3ee9f0487c73dc5574f5f6b759489b427a813504d2a5e5c711d217d6b",
+      "export_sha256": "42ea7cf3ee9f0487c73dc5574f5f6b759489b427a813504d2a5e5c711d217d6b",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_gaussian_peculiar_conditional.json",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_gaussian_peculiar_conditional.json",
+      "original_sha256": "d92eaf7ab6cb597b8f3045b6694076f59a7c5356ca164e2ebc65e491d3644856",
+      "export_sha256": "d92eaf7ab6cb597b8f3045b6694076f59a7c5356ca164e2ebc65e491d3644856",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_gaussian_peculiar_conditional.npz",
+      "original_artifact": "trajectory/results/mc_corrected_coordinates_n8192_step0.005_gaussian_peculiar_conditional.npz",
+      "original_sha256": "bb8fd72be1d3c0932824999c0128a3c9c68e91fb973d05438b40c6fcd95198b7",
+      "export_sha256": "bb8fd72be1d3c0932824999c0128a3c9c68e91fb973d05438b40c6fcd95198b7",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_published_n1024_step0.0025.json",
+      "original_artifact": "trajectory/results/mc_published_n1024_step0.0025.json",
+      "original_sha256": "8b532c81603da497ff915c09c9c7e4be71c656ab11c616f56c79cf9bbb94e431",
+      "export_sha256": "8b532c81603da497ff915c09c9c7e4be71c656ab11c616f56c79cf9bbb94e431",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_published_n1024_step0.0025.npz",
+      "original_artifact": "trajectory/results/mc_published_n1024_step0.0025.npz",
+      "original_sha256": "358d68b92721e0d1171f186475d6ec8021bfc6e1ee1183a7b2069c2b47444137",
+      "export_sha256": "358d68b92721e0d1171f186475d6ec8021bfc6e1ee1183a7b2069c2b47444137",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_published_n32768_step0.005.json",
+      "original_artifact": "trajectory/results/mc_published_n32768_step0.005.json",
+      "original_sha256": "d31bbf8b0fc3b483b2140abfa1cf6e34dad3a48e92bcdf9dc3852aa40639e4d8",
+      "export_sha256": "d31bbf8b0fc3b483b2140abfa1cf6e34dad3a48e92bcdf9dc3852aa40639e4d8",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_published_n32768_step0.005.npz",
+      "original_artifact": "trajectory/results/mc_published_n32768_step0.005.npz",
+      "original_sha256": "437ef25ed76c2d9d24291ee2942fd07ca9e2f429016724192c2d1ff4debdc441",
+      "export_sha256": "437ef25ed76c2d9d24291ee2942fd07ca9e2f429016724192c2d1ff4debdc441",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_published_n32768_step0.005_uniform_heliocentric.json",
+      "original_artifact": "trajectory/results/mc_published_n32768_step0.005_uniform_heliocentric.json",
+      "original_sha256": "7b930c290a91588d3dbea47017a7d76a1087a5f459043d4f0451429b4759dc10",
+      "export_sha256": "7b930c290a91588d3dbea47017a7d76a1087a5f459043d4f0451429b4759dc10",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/mc_published_n32768_step0.005_uniform_heliocentric.npz",
+      "original_artifact": "trajectory/results/mc_published_n32768_step0.005_uniform_heliocentric.npz",
+      "original_sha256": "788d9dc9cc9ba531fd31442a9072d884d0e4ab939be6beabb122a3e4ea3764dd",
+      "export_sha256": "788d9dc9cc9ba531fd31442a9072d884d0e4ab939be6beabb122a3e4ea3764dd",
+      "adapted": false
+    },
+    {
+      "file": "trajectory/results/timestep_validation.json",
+      "original_artifact": "trajectory/results/timestep_validation.json",
+      "original_sha256": "8be4470bc2ff5f7cf0da08c518f6011d3dc8a4f198f5c822cf69e71bef559d89",
+      "export_sha256": "8be4470bc2ff5f7cf0da08c518f6011d3dc8a4f198f5c822cf69e71bef559d89",
+      "adapted": false
+    },
+    {
+      "file": "audit/code/figure_vector.py",
+      "original_artifact": "followup_20261019/adversarial/code/figure_vector.py",
+      "original_sha256": "d1660349f61e002fac17db481c0c686a97916f120bbe36b8b5f85afc687cea81",
+      "export_sha256": "e389c03b8f0ba80ab18008c2ea7e682e5f07786af3dceae13bdae933d60fa02c",
+      "adapted": true
+    },
+    {
+      "file": "audit/code/frame_counterchecks.py",
+      "original_artifact": "followup_20261019/adversarial/code/frame_counterchecks.py",
+      "original_sha256": "97a2182f76710ed02d8261eb06ffa5a0e364ea7fb48d697a4e92204dd57834db",
+      "export_sha256": "81ad6014062403e3e77860a6f2071a82857b018c2f8ad73f9b2787253eb8fbd1",
+      "adapted": true
+    },
+    {
+      "file": "audit/code/encounter_statistics.py",
+      "original_artifact": "followup_20261019/adversarial/code/encounter_statistics.py",
+      "original_sha256": "2cdf67fe97b83ecabc654f50dff51c649c5f01bd9393374c42b06b732993aa40",
+      "export_sha256": "3bf6ca30f0ce224b6f54f8337cdeef8d192c0d1ffcd549286f876e040d23ac91",
+      "adapted": true
+    },
+    {
+      "file": "audit/code/uncertainty_counterchecks.py",
+      "original_artifact": "followup_20261019/adversarial/code/uncertainty_counterchecks.py",
+      "original_sha256": "d40980ad3023f0b5b6065e39e215de7031141b556ffcbe1fe22d1692fc325073",
+      "export_sha256": "44bd0941e2b5d0378fe16a5ea203b11c4cdc71ede913a72ed1771e53e0a9b2da",
+      "adapted": true
+    },
+    {
+      "file": "audit/code/frame_mc.py",
+      "original_artifact": "followup_20261019/adversarial/code/frame_mc.py",
+      "original_sha256": "6a2aca1058b9a2c94e1dfb266195c2622f4cb62bf592678b94df46a8579fc32b",
+      "export_sha256": "3d11ca9a9169b8111bdf92086ab187328173f203c755d8ba26b2882eec1ec605",
+      "adapted": true
+    },
+    {
+      "file": "audit/code/invert_vector_tracks.py",
+      "original_artifact": "followup_20261019/adversarial/code/invert_vector_tracks.py",
+      "original_sha256": "e990e68f69a3a6a726184358bcc646ea24e5ab25796aa7a560f6a1ea7546826e",
+      "export_sha256": "8bde5c2d931bb6d7e7ac4a818bbe8cf55915e7e9fb3e47597f2fbd11ecb6daaf",
+      "adapted": true
+    },
+    {
+      "file": "audit/code/inversion_controls.py",
+      "original_artifact": "followup_20261019/adversarial/code/inversion_controls.py",
+      "original_sha256": "145b32444277dc64fb9eceb7ceed2e17f50945d7475571efb36bb40c73ab43c4",
+      "export_sha256": "145b32444277dc64fb9eceb7ceed2e17f50945d7475571efb36bb40c73ab43c4",
+      "adapted": true
+    },
+    {
+      "file": "audit/results/encounter_statistics.json",
+      "original_artifact": "followup_20261019/adversarial/results/encounter_statistics.json",
+      "original_sha256": "29088cf28c58319c658ee155372ff807c128f4087d0858203a8e38c7e733dd35",
+      "export_sha256": "29088cf28c58319c658ee155372ff807c128f4087d0858203a8e38c7e733dd35",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/frame_counterchecks.json",
+      "original_artifact": "followup_20261019/adversarial/results/frame_counterchecks.json",
+      "original_sha256": "e9df6deb808c001a6ee040929834f885bed5e0f79af4f3b0f12f3a1d151461ab",
+      "export_sha256": "e9df6deb808c001a6ee040929834f885bed5e0f79af4f3b0f12f3a1d151461ab",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/frame_mc.json",
+      "original_artifact": "followup_20261019/adversarial/results/frame_mc.json",
+      "original_sha256": "6cc6647a9f9c972ee609ecf6b1daa893bdba8777a9f5477181549b66283c181a",
+      "export_sha256": "6cc6647a9f9c972ee609ecf6b1daa893bdba8777a9f5477181549b66283c181a",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/inversion_controls.json",
+      "original_artifact": "followup_20261019/adversarial/results/inversion_controls.json",
+      "original_sha256": "2b179e631e70434966140f77f7a0c2a249b585e221f2a82af0d2902bd45b1eff",
+      "export_sha256": "2b179e631e70434966140f77f7a0c2a249b585e221f2a82af0d2902bd45b1eff",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_age84.json",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_age84.json",
+      "original_sha256": "559b17d7e2ae5ffd8b6e123e540f61e2e3478cbdbf91a2d417974ce18f36552e",
+      "export_sha256": "559b17d7e2ae5ffd8b6e123e540f61e2e3478cbdbf91a2d417974ce18f36552e",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_age84.npz",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_age84.npz",
+      "original_sha256": "4212c8407ec6b0a659e2e1e07dc0169b97e4808b92ce7131d549d6a68c578844",
+      "export_sha256": "4212c8407ec6b0a659e2e1e07dc0169b97e4808b92ce7131d549d6a68c578844",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_counterchecks.json",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_counterchecks.json",
+      "original_sha256": "4d69b1aeee254490b027e480060084601db3fb5c6a1f574308083b6640c95c74",
+      "export_sha256": "4d69b1aeee254490b027e480060084601db3fb5c6a1f574308083b6640c95c74",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_pm_member_scatter.json",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_pm_member_scatter.json",
+      "original_sha256": "70d5f66f4b2e05a654ff86e950f0c7e42a5874e53dca266a4b40a7181fe226f0",
+      "export_sha256": "70d5f66f4b2e05a654ff86e950f0c7e42a5874e53dca266a4b40a7181fe226f0",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_pm_member_scatter.npz",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_pm_member_scatter.npz",
+      "original_sha256": "f6c73e9e99611f6050512aeb7658772741c5a64158a5352760592028577fe1a3",
+      "export_sha256": "f6c73e9e99611f6050512aeb7658772741c5a64158a5352760592028577fe1a3",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_rv_member_scatter.json",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_rv_member_scatter.json",
+      "original_sha256": "517fbd9659f09f8f674022b3728eb44e56b9ea42f0b4318be0290816ef24890d",
+      "export_sha256": "517fbd9659f09f8f674022b3728eb44e56b9ea42f0b4318be0290816ef24890d",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_rv_member_scatter.npz",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_rv_member_scatter.npz",
+      "original_sha256": "f3f4202e406afebab5c62443858368205b7462441f16721409c95720799d861a",
+      "export_sha256": "f3f4202e406afebab5c62443858368205b7462441f16721409c95720799d861a",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_rv_pm_member_scatter.json",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_rv_pm_member_scatter.json",
+      "original_sha256": "6ea05110aea4704350ffac24a14fba27b0ad7f106a6c9f9b329b0361df9250ed",
+      "export_sha256": "6ea05110aea4704350ffac24a14fba27b0ad7f106a6c9f9b329b0361df9250ed",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_rv_pm_member_scatter.npz",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_rv_pm_member_scatter.npz",
+      "original_sha256": "c5112d2c80a3dde46b32e28f978d8bc0becf35a023f62d4910d821a3ce92fd86",
+      "export_sha256": "c5112d2c80a3dde46b32e28f978d8bc0becf35a023f62d4910d821a3ce92fd86",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_schoenrich_frame_correct.json",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_schoenrich_frame_correct.json",
+      "original_sha256": "4e1f003e0b9a443602b2c2195ba4ff39a1c11f0309d84dcdb909fea7ee87ed09",
+      "export_sha256": "4e1f003e0b9a443602b2c2195ba4ff39a1c11f0309d84dcdb909fea7ee87ed09",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_schoenrich_frame_correct.npz",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_schoenrich_frame_correct.npz",
+      "original_sha256": "d06e4ab7a833dbdb2394cc34b2013266540bf5b06d1a3c2b668b2645c4c061e4",
+      "export_sha256": "d06e4ab7a833dbdb2394cc34b2013266540bf5b06d1a3c2b668b2645c4c061e4",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_schoenrich_frame_printed.json",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_schoenrich_frame_printed.json",
+      "original_sha256": "3ee4045056ee492528ce5f19315a5738bbe7f8570f1acce6733f70518cf7728a",
+      "export_sha256": "3ee4045056ee492528ce5f19315a5738bbe7f8570f1acce6733f70518cf7728a",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/uncertainty_schoenrich_frame_printed.npz",
+      "original_artifact": "followup_20261019/adversarial/results/uncertainty_schoenrich_frame_printed.npz",
+      "original_sha256": "3ea2afcaf1f80df47efc63203ea947f98aac3ef7a01c892dd3580d26568b04e5",
+      "export_sha256": "3ea2afcaf1f80df47efc63203ea947f98aac3ef7a01c892dd3580d26568b04e5",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/vector_figure.json",
+      "original_artifact": "followup_20261019/adversarial/results/vector_figure.json",
+      "original_sha256": "b1d343b1b1a91e2f5d0b9ead95fa1640354e8af16484f5ca88a68880191184a4",
+      "export_sha256": "b1d343b1b1a91e2f5d0b9ead95fa1640354e8af16484f5ca88a68880191184a4",
+      "adapted": false
+    },
+    {
+      "file": "audit/results/vector_inversion.json",
+      "original_artifact": "followup_20261019/adversarial/results/vector_inversion.json",
+      "original_sha256": "a27d2d1d54aedfcd1d9bcc924a9cfc4e8af88cc356d34440e27829edada2e345",
+      "export_sha256": "a27d2d1d54aedfcd1d9bcc924a9cfc4e8af88cc356d34440e27829edada2e345",
+      "adapted": false
+    },
+    {
+      "file": "audit/sources/j0737_oc_orbits.svg",
+      "original_artifact": "followup_20261019/adversarial/sources/j0737_oc_orbits.svg",
+      "original_sha256": "8d8582dddc999f9e307af9bf832479e88474daa720979da05ea1f3f7a252520c",
+      "export_sha256": "8d8582dddc999f9e307af9bf832479e88474daa720979da05ea1f3f7a252520c",
+      "adapted": false
+    },
+    {
+      "file": "audit/sources/j0737_oc_orbits.pdf",
+      "original_artifact": "followup_20261019/sources/j0737_oc_orbits.pdf",
+      "original_sha256": "6ff997a3e20be530dbb09b8c66082a6f8384b9db944e9c858b2a9127a564254f",
+      "export_sha256": "6ff997a3e20be530dbb09b8c66082a6f8384b9db944e9c858b2a9127a564254f",
+      "adapted": false
+    },
+    {
+      "file": "validation/code/ode_check.py",
+      "original_artifact": "targets/trajectory_controls/ode_check.py",
+      "original_sha256": "099b9d848ca336cf20f5b0a13eae7abafee60cb13b0f7d82b0cb8ccb46f4675d",
+      "export_sha256": "3b2fbed4fcd98226f0ad4a6aa9a43a89289f90a4a3c13b80babf67459515b938",
+      "adapted": true
+    },
+    {
+      "file": "validation/results/ode_check.json",
+      "original_artifact": "targets/trajectory_controls/ode_check.json",
+      "original_sha256": "56ea8214e79b939e0ede9b1e312accff51be112cee9a99caaffa5c11fdae7e58",
+      "export_sha256": "56ea8214e79b939e0ede9b1e312accff51be112cee9a99caaffa5c11fdae7e58",
+      "adapted": false
+    },
+    {
+      "file": "sources/catalog/theia58_vizier.tsv",
+      "original_artifact": "population/sources/theia58_vizier.tsv",
+      "original_sha256": "7ef27074f8123d5622363f6c7450919ae136ab3c2a39a4fb2dd1e7b04b59fe4f",
+      "export_sha256": "7ef27074f8123d5622363f6c7450919ae136ab3c2a39a4fb2dd1e7b04b59fe4f",
+      "adapted": false
+    },
+    {
+      "file": "sources/catalog/oc0450_vizier.tsv",
+      "original_artifact": "population/sources/oc0450_vizier.tsv",
+      "original_sha256": "0f2bf28134091011f068d0f5664cef91c6a599824a8a5cbf60086eb99bd86ae5",
+      "export_sha256": "0f2bf28134091011f068d0f5664cef91c6a599824a8a5cbf60086eb99bd86ae5",
+      "adapted": false
+    },
+    {
+      "file": "sources/catalog/theia58_vizier2023.tsv",
+      "original_artifact": "population/sources/theia58_vizier2023.tsv",
+      "original_sha256": "86cb1bf8d8c14b788e2318b9a0c06f4aa05ac38b8fee88c775d7f25b78ba6a0e",
+      "export_sha256": "86cb1bf8d8c14b788e2318b9a0c06f4aa05ac38b8fee88c775d7f25b78ba6a0e",
+      "adapted": false
+    },
+    {
+      "file": "sources/catalog/oc0450_vizier2023.tsv",
+      "original_artifact": "population/sources/oc0450_vizier2023.tsv",
+      "original_sha256": "7f2eece5e0d64a1b39e6f6dbaa3fb0ee89dd8a7132976be51cffca29bf6686ab",
+      "export_sha256": "7f2eece5e0d64a1b39e6f6dbaa3fb0ee89dd8a7132976be51cffca29bf6686ab",
+      "adapted": false
+    },
+    {
+      "file": "sources/yu2026_table1_J0737.tex",
+      "original_artifact": "followup_20261019/sources/arxiv_bns-origin.tex",
+      "original_sha256": "e45836315a953ec6999f76a3cb716d5a607e268eb010d5a5211e7c676868ab6d",
+      "export_sha256": "63e27b3b6eda7b75c014db3bbdc65ea470a5e3900a9f41a74d5ef83b6e8fdd7d",
+      "adapted": true,
+      "selected_original_line": 114,
+      "transformation": "Only the exact J0737 row retained; newline appended."
+    },
+    {
+      "file": "sources/yu2026_table1_J0737.tsv",
+      "original_artifact": "followup_20261019/sources/publisher_table1_response.txt",
+      "original_sha256": "8ae75f9cafd0e42af7bfa670a6ad1bfe2aa559e9484d2ba88d0206da04f182d3",
+      "export_sha256": "cfd77af09c2720ef9c2385c150669bcc498130d434701d84668e46aa5ada7026",
+      "adapted": true,
+      "selected_original_line": 8,
+      "transformation": "Only the exact J0737 row retained; newline appended."
+    }
+  ],
+  "exported_UTC": "2026-10-19T10:39:48.131885+00:00"
+}

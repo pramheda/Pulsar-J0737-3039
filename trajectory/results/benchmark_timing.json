@@ -1,0 +1,98 @@
+{
+  "scope": "Fixed published Table1 binary state, catalog cluster centers, heliocentric vr66.25. Figure2 precise draw parameters unavailable.",
+  "binary": {
+    "ra_deg": 114.46352849386929,
+    "dec_deg": -30.661303192105727,
+    "distance_kpc": 0.74,
+    "distance_sigma_kpc": 0.06,
+    "pmra": -2.567,
+    "pmra_sigma": 0.03,
+    "pmdec": 2.082,
+    "pmdec_sigma": 0.04,
+    "position_source": "Kramer2021TableII, MJD55045 propagated to2016.0; rounded distance0.74kpc retained"
+  },
+  "position_choice": "timing",
+  "radial_heliocentric_kms": 66.25,
+  "published_figure2_lookback_myr": {
+    "Theia_58": 7.43,
+    "OC_0450": 8.04
+  },
+  "frame": {
+    "galcen_distance_kpc": 8.122,
+    "z_sun_kpc": 0.0208,
+    "galcen_v_sun_kms": [
+      12.9,
+      245.6,
+      7.78
+    ],
+    "galpy_ro_kpc": 8.122,
+    "galpy_vo_kms": 220.0
+  },
+  "result": [
+    {
+      "step_myr": 0.01,
+      "cluster": "Theia_58",
+      "grid_min_separation_pc": 102.71534038669186,
+      "grid_lookback_myr": 6.03,
+      "interpolated_min_separation_pc": 102.71532449945965,
+      "interpolated_lookback_myr": 6.028562699174879,
+      "threshold_pc": 31.06958874,
+      "is_encounter": false
+    },
+    {
+      "step_myr": 0.01,
+      "cluster": "OC_0450",
+      "grid_min_separation_pc": 95.8023895931497,
+      "grid_lookback_myr": 7.48,
+      "interpolated_min_separation_pc": 95.80223503418874,
+      "interpolated_lookback_myr": 7.4769121084290555,
+      "threshold_pc": 53.346137490000004,
+      "is_encounter": false
+    },
+    {
+      "step_myr": 0.005,
+      "cluster": "Theia_58",
+      "grid_min_separation_pc": 102.71534038669186,
+      "grid_lookback_myr": 6.03,
+      "interpolated_min_separation_pc": 102.71532449946126,
+      "interpolated_lookback_myr": 6.0285627665177985,
+      "threshold_pc": 31.06958874,
+      "is_encounter": false
+    },
+    {
+      "step_myr": 0.005,
+      "cluster": "OC_0450",
+      "grid_min_separation_pc": 95.80229430493604,
+      "grid_lookback_myr": 7.4750000000000005,
+      "interpolated_min_separation_pc": 95.80223503418868,
+      "interpolated_lookback_myr": 7.476912177368404,
+      "threshold_pc": 53.346137490000004,
+      "is_encounter": false
+    },
+    {
+      "step_myr": 0.0025,
+      "cluster": "Theia_58",
+      "grid_min_separation_pc": 102.71533318616855,
+      "grid_lookback_myr": 6.0275,
+      "interpolated_min_separation_pc": 102.71532449946142,
+      "interpolated_lookback_myr": 6.028562668405653,
+      "threshold_pc": 31.06958874,
+      "is_encounter": false
+    },
+    {
+      "step_myr": 0.0025,
+      "cluster": "OC_0450",
+      "grid_min_separation_pc": 95.80224063563548,
+      "grid_lookback_myr": 7.4775,
+      "interpolated_min_separation_pc": 95.80223503419059,
+      "interpolated_lookback_myr": 7.476912056117552,
+      "threshold_pc": 53.346137490000004,
+      "is_encounter": false
+    }
+  ],
+  "max_relative_energy_drift": 1.1438233855920019e-12,
+  "max_relative_Lz_drift": 1.3135245791974624e-12,
+  "independent_integrator_max_discrepancy_pc": 4.269017567698034e-08,
+  "coordinate_conversion_max_discrepancy_kpc": 4.107825191113079e-15,
+  "runtime_seconds": 0.6373659232631326
+}

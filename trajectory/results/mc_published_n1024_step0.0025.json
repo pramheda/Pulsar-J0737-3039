@@ -1,0 +1,305 @@
+{
+  "scope": "Independent conditional two-cluster calculation; no original execution files recovered.",
+  "position_choice": "published",
+  "binary": {
+    "ra_deg": 144.448,
+    "dec_deg": -30.6278,
+    "distance_kpc": 0.74,
+    "distance_sigma_kpc": 0.06,
+    "pmra": -2.57,
+    "pmra_sigma": 0.03,
+    "pmdec": 2.08,
+    "pmdec_sigma": 0.04
+  },
+  "n": 1024,
+  "step_myr": 0.0025,
+  "seed": 2026101909,
+  "chunk": 64,
+  "proposals": "Unconditional zero-centered heliocentric three-Gaussian mixture; all alternatives importance-reweighted with identical binary and cluster draws.",
+  "covariance_model": "Fixed RA/Dec; independent Gaussian distance/pmRA/pmDec and cluster-mean RV errors; symmetric cluster distance error; fixed median ages.",
+  "peculiar_frame": "Astropy Galactocentric with given solar velocity; local circular velocity from MWPotential2014 at each sampled position, no vertical mean.",
+  "effective_observation_epoch": 2016.0,
+  "summary": [
+    {
+      "prior": "gaussian_heliocentric",
+      "weight_mean": 1.0,
+      "weight_se": 0.0,
+      "effective_sample_size": 1024.0,
+      "probabilities": {
+        "Theia_58": 0.068359375,
+        "OC_0450": 0.14453125,
+        "intersection": 0.068359375,
+        "true_union": 0.14453125
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.007890153164517147,
+        "OC_0450": 0.010993731786157075,
+        "intersection": 0.007890153164517147,
+        "true_union": 0.010993731786157075
+      },
+      "product_union": 0.20301055908203125,
+      "event_covariance": 0.05847930908203125,
+      "baseline_binomial_one_sided_95": {
+        "Theia_58": {
+          "count": 70,
+          "one_sided_95_lower": 0.05583494742158603,
+          "one_sided_95_upper": 0.08276820527047006
+        },
+        "OC_0450": {
+          "count": 148,
+          "one_sided_95_lower": 0.1267428508283779,
+          "one_sided_95_upper": 0.16385198369825316
+        },
+        "intersection": {
+          "count": 70,
+          "one_sided_95_lower": 0.05583494742158603,
+          "one_sided_95_upper": 0.08276820527047006
+        },
+        "true_union": {
+          "count": 148,
+          "one_sided_95_lower": 0.1267428508283779,
+          "one_sided_95_upper": 0.16385198369825316
+        }
+      }
+    },
+    {
+      "prior": "uniform_heliocentric",
+      "weight_mean": 0.9712662404473481,
+      "weight_se": 0.033799859895379536,
+      "effective_sample_size": 457.3717733247533,
+      "probabilities": {
+        "Theia_58": 0.053504381483739955,
+        "OC_0450": 0.12536868548889984,
+        "intersection": 0.053504381483739955,
+        "true_union": 0.12536868548889984
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.006613445248533964,
+        "OC_0450": 0.010959833372370985,
+        "intersection": 0.006613445248533964,
+        "true_union": 0.010959833372370985
+      },
+      "product_union": 0.17216529299812666,
+      "event_covariance": 0.046796607509226845,
+      "baseline_binomial_one_sided_95": null
+    },
+    {
+      "prior": "gaussian_peculiar_marginal",
+      "weight_mean": 1.000276024707006,
+      "weight_se": 0.011840479744492031,
+      "effective_sample_size": 895.6197608409799,
+      "probabilities": {
+        "Theia_58": 0.10482721360696276,
+        "OC_0450": 0.22502646540184051,
+        "intersection": 0.10482721360696276,
+        "true_union": 0.22502646540184051
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.011701523519254145,
+        "OC_0450": 0.015687571187999287,
+        "intersection": 0.011701523519254145,
+        "true_union": 0.015687571187999287
+      },
+      "product_union": 0.3062647816529048,
+      "event_covariance": 0.0812383162510642,
+      "baseline_binomial_one_sided_95": null
+    },
+    {
+      "prior": "gaussian_peculiar_conditional",
+      "weight_mean": 1.000940194973612,
+      "weight_se": 0.019200679024581106,
+      "effective_sample_size": 743.9496623343782,
+      "probabilities": {
+        "Theia_58": 0.13603504169699934,
+        "OC_0450": 0.2842210575769856,
+        "intersection": 0.13603504169699934,
+        "true_union": 0.2842210575769856
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.014755659236961515,
+        "OC_0450": 0.018573553024785475,
+        "intersection": 0.014755659236961515,
+        "true_union": 0.018573553024785475
+      },
+      "product_union": 0.3815920758553345,
+      "event_covariance": 0.09737101827834885,
+      "baseline_binomial_one_sided_95": null
+    },
+    {
+      "prior": "cauchy_peculiar_conditional",
+      "weight_mean": 1.0027609996396243,
+      "weight_se": 0.023827279139212173,
+      "effective_sample_size": 649.0858611581641,
+      "probabilities": {
+        "Theia_58": 0.1408027333695802,
+        "OC_0450": 0.28097555296582927,
+        "intersection": 0.1408027333695802,
+        "true_union": 0.28097555296582927
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.015351028112540145,
+        "OC_0450": 0.01900728385532493,
+        "intersection": 0.015351028112540145,
+        "true_union": 0.01900728385532493
+      },
+      "product_union": 0.3822161604677915,
+      "event_covariance": 0.10124060750196219,
+      "baseline_binomial_one_sided_95": null
+    }
+  ],
+  "half_sample_summary": [
+    {
+      "prior": "gaussian_heliocentric",
+      "weight_mean": 1.0,
+      "weight_se": 0.0,
+      "effective_sample_size": 512.0,
+      "probabilities": {
+        "Theia_58": 0.072265625,
+        "OC_0450": 0.142578125,
+        "intersection": 0.072265625,
+        "true_union": 0.142578125
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.011454265772634043,
+        "OC_0450": 0.01546725619590982,
+        "intersection": 0.011454265772634043,
+        "true_union": 0.01546725619590982
+      },
+      "product_union": 0.20454025268554688,
+      "event_covariance": 0.061962127685546875,
+      "baseline_binomial_one_sided_95": {
+        "Theia_58": {
+          "count": 37,
+          "one_sided_95_lower": 0.05434936367476157,
+          "one_sided_95_upper": 0.09397465291602991
+        },
+        "OC_0450": {
+          "count": 73,
+          "one_sided_95_lower": 0.11776819957861095,
+          "one_sided_95_upper": 0.17050820939448602
+        },
+        "intersection": {
+          "count": 37,
+          "one_sided_95_lower": 0.05434936367476157,
+          "one_sided_95_upper": 0.09397465291602991
+        },
+        "true_union": {
+          "count": 73,
+          "one_sided_95_lower": 0.11776819957861095,
+          "one_sided_95_upper": 0.17050820939448602
+        }
+      }
+    },
+    {
+      "prior": "uniform_heliocentric",
+      "weight_mean": 0.970596123335028,
+      "weight_se": 0.048588803867437746,
+      "effective_sample_size": 224.5015362001581,
+      "probabilities": {
+        "Theia_58": 0.056691170758626924,
+        "OC_0450": 0.11961744678203902,
+        "intersection": 0.056691170758626924,
+        "true_union": 0.11961744678203902
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.00967168249261573,
+        "OC_0450": 0.014915542268833418,
+        "intersection": 0.00967168249261573,
+        "true_union": 0.014915542268833418
+      },
+      "product_union": 0.1695273644394344,
+      "event_covariance": 0.04990991765739538,
+      "baseline_binomial_one_sided_95": null
+    },
+    {
+      "prior": "gaussian_peculiar_marginal",
+      "weight_mean": 0.9861890650290057,
+      "weight_se": 0.016668651534850833,
+      "effective_sample_size": 446.7781130384919,
+      "probabilities": {
+        "Theia_58": 0.1124081379491502,
+        "OC_0450": 0.22377746046913594,
+        "intersection": 0.1124081379491502,
+        "true_union": 0.22377746046913594
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.017162870324480755,
+        "OC_0450": 0.022231489625219883,
+        "intersection": 0.017162870324480755,
+        "true_union": 0.022231489625219883
+      },
+      "product_union": 0.31103119077196095,
+      "event_covariance": 0.08725373030282506,
+      "baseline_binomial_one_sided_95": null
+    },
+    {
+      "prior": "gaussian_peculiar_conditional",
+      "weight_mean": 0.9786012116816835,
+      "weight_se": 0.027433813107069067,
+      "effective_sample_size": 365.2996839113714,
+      "probabilities": {
+        "Theia_58": 0.147036511023463,
+        "OC_0450": 0.28754398120343444,
+        "intersection": 0.147036511023463,
+        "true_union": 0.28754398120343444
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.02174915630660472,
+        "OC_0450": 0.026640627100805486,
+        "intersection": 0.02174915630660472,
+        "true_union": 0.026640627100805486
+      },
+      "product_union": 0.3923010284649482,
+      "event_covariance": 0.10475704726151377,
+      "baseline_binomial_one_sided_95": null
+    },
+    {
+      "prior": "cauchy_peculiar_conditional",
+      "weight_mean": 0.9765104116974126,
+      "weight_se": 0.03373364063672961,
+      "effective_sample_size": 318.05022526658286,
+      "probabilities": {
+        "Theia_58": 0.15269884345161946,
+        "OC_0450": 0.29009916806612845,
+        "intersection": 0.15269884345161946,
+        "true_union": 0.29009916806612845
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.022698462384442772,
+        "OC_0450": 0.027560024789099833,
+        "intersection": 0.022698462384442772,
+        "true_union": 0.027560024789099833
+      },
+      "product_union": 0.3985002040677731,
+      "event_covariance": 0.10840103600164466,
+      "baseline_binomial_one_sided_95": null
+    }
+  ],
+  "grid_to_quadratic_event_changes": 0,
+  "raw_event_counts": [
+    70,
+    148
+  ],
+  "raw_intersection_count": 70,
+  "prior_projection": {
+    "center_quantiles": [
+      27.658461692119165,
+      28.025309445513045,
+      28.39844637269093
+    ],
+    "vt_quantiles": [
+      21.23417141295011,
+      21.617129818239363,
+      22.00616564312879
+    ]
+  },
+  "runtime_seconds": 8.14848952088505,
+  "limitations": [
+    "Two clusters only; neither all-catalog union nor posterior probability of origin.",
+    "Original coordinate, radial-frame and covariance implementation unrecovered.",
+    "No Gaia cluster-center systematic covariance or birth/ejection population selection.",
+    "No conclusion that changing a prior identifies the physical truth.",
+    "A zero-event weighted estimate is not a zero true probability; exact binomial limits only apply to the unweighted proposal prior.",
+    "Cauchy importance weights have finite-sample ESS only; Gaussian proposal does not certify far-tail convergence of polynomial Cauchy tails."
+  ]
+}

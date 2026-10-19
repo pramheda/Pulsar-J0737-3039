@@ -1,0 +1,138 @@
+{
+  "scope": "Independent conditional two-cluster calculation; no original execution files recovered.",
+  "position_choice": "published",
+  "binary": {
+    "ra_deg": 144.448,
+    "dec_deg": -30.6278,
+    "distance_kpc": 0.74,
+    "distance_sigma_kpc": 0.06,
+    "pmra": -2.57,
+    "pmra_sigma": 0.03,
+    "pmdec": 2.08,
+    "pmdec_sigma": 0.04
+  },
+  "n": 32768,
+  "step_myr": 0.005,
+  "seed": 2026101909,
+  "chunk": 64,
+  "direct_radial_prior": "uniform_heliocentric",
+  "proposals": "Direct independent samples from named radial prior; all non-radial normal draws shared with baseline.",
+  "covariance_model": "Fixed RA/Dec; independent Gaussian distance/pmRA/pmDec and cluster-mean RV errors; symmetric cluster distance error; fixed median ages.",
+  "peculiar_frame": "Astropy Galactocentric with given solar velocity; local circular velocity from MWPotential2014 at each sampled position, no vertical mean.",
+  "effective_observation_epoch": 2016.0,
+  "summary": [
+    {
+      "prior": "uniform_heliocentric",
+      "weight_mean": 1.0,
+      "weight_se": 0.0,
+      "effective_sample_size": 32768.0,
+      "probabilities": {
+        "Theia_58": 0.0389404296875,
+        "OC_0450": 0.12432861328125,
+        "intersection": 0.0389404296875,
+        "true_union": 0.12432861328125
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.0010687033802618713,
+        "OC_0450": 0.0018227948118085973,
+        "intersection": 0.0010687033802618713,
+        "true_union": 0.0018227948118085973
+      },
+      "product_union": 0.1584276333451271,
+      "event_covariance": 0.034099020063877106,
+      "baseline_binomial_one_sided_95": {
+        "Theia_58": {
+          "count": 1276,
+          "one_sided_95_lower": 0.03719762605345512,
+          "one_sided_95_upper": 0.040744028431808195
+        },
+        "OC_0450": {
+          "count": 4074,
+          "one_sided_95_lower": 0.12133985028214406,
+          "one_sided_95_upper": 0.127366690175183
+        },
+        "intersection": {
+          "count": 1276,
+          "one_sided_95_lower": 0.03719762605345512,
+          "one_sided_95_upper": 0.040744028431808195
+        },
+        "true_union": {
+          "count": 4074,
+          "one_sided_95_lower": 0.12133985028214406,
+          "one_sided_95_upper": 0.127366690175183
+        }
+      }
+    }
+  ],
+  "half_sample_summary": [
+    {
+      "prior": "uniform_heliocentric",
+      "weight_mean": 1.0,
+      "weight_se": 0.0,
+      "effective_sample_size": 16384.0,
+      "probabilities": {
+        "Theia_58": 0.03887939453125,
+        "OC_0450": 0.12518310546875,
+        "intersection": 0.03887939453125,
+        "true_union": 0.12518310546875
+      },
+      "monte_carlo_se": {
+        "Theia_58": 0.0015102608865892875,
+        "OC_0450": 0.0025854415602844724,
+        "intersection": 0.0015102608865892875,
+        "true_union": 0.0025854415602844724
+      },
+      "product_union": 0.1591954566538334,
+      "event_covariance": 0.03401235118508339,
+      "baseline_binomial_one_sided_95": {
+        "Theia_58": {
+          "count": 637,
+          "one_sided_95_lower": 0.03642556219664651,
+          "one_sided_95_upper": 0.04145537482580432
+        },
+        "OC_0450": {
+          "count": 2051,
+          "one_sided_95_lower": 0.12094944389594771,
+          "one_sided_95_upper": 0.1295154245980481
+        },
+        "intersection": {
+          "count": 637,
+          "one_sided_95_lower": 0.03642556219664651,
+          "one_sided_95_upper": 0.04145537482580432
+        },
+        "true_union": {
+          "count": 2051,
+          "one_sided_95_lower": 0.12094944389594771,
+          "one_sided_95_upper": 0.1295154245980481
+        }
+      }
+    }
+  ],
+  "grid_to_quadratic_event_changes": 0,
+  "raw_event_counts": [
+    1276,
+    4074
+  ],
+  "raw_intersection_count": 1276,
+  "prior_projection": {
+    "center_quantiles": [
+      27.672603490573923,
+      28.04506870808167,
+      28.426895710570463
+    ],
+    "vt_quantiles": [
+      21.25373759369055,
+      21.638668330697904,
+      22.030987516415266
+    ]
+  },
+  "runtime_seconds": 111.30189052317291,
+  "limitations": [
+    "Two clusters only; neither all-catalog union nor posterior probability of origin.",
+    "Original coordinate, radial-frame and covariance implementation unrecovered.",
+    "No Gaia cluster-center systematic covariance or birth/ejection population selection.",
+    "No conclusion that changing a prior identifies the physical truth.",
+    "A zero-event weighted estimate is not a zero true probability; exact binomial limits only apply to the unweighted proposal prior.",
+    "Cauchy importance weights have finite-sample ESS only; Gaussian proposal does not certify far-tail convergence of polynomial Cauchy tails."
+  ]
+}

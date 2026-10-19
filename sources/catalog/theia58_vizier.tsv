@@ -1,0 +1,114 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-19T06:50:59 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-19T06:50:59	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/A%2bA/686/A42/clusters&-out.all&-out.max=10&Name=Theia_58	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+
+#RESOURCE=yCat_36860042
+#Name: J/A+A/686/A42
+#Title: Improving the open cluster census. III. (Hunt+, 2024)
+#INFO	ivoid=ivo://cds.vizier/j/a+a/686/a42	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/a+a/686/a42	    IVOID of underlying data collection
+#INFO	creator=Hunt E.L.	    First author or institution
+#INFO	cites=bibcode:2024A&A...686A..42H	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2024	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/686/A42	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.36860042	    Dataset identifier that can be used for citation
+#INFO	publication_date=2024-11-21	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	J_A_A_686_A42_clusters:
+#Name: J/A+A/686/A42/clusters
+#Title: Main catalogue (table 1)
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Name	(a20)	Main accepted cluster name	[ucd=meta.id;meta.main]
+#Column	ID	(I4)	Internal cluster ID	[ucd=meta.id]
+#Column	AllNames	(a253)	Comma separated list of all cluster names this object crossmatched against and all name variants	[ucd=meta.id]
+#Column	Type	(A1)	[omgdr] Estimated type of object (1)	[ucd=src.class]
+#Column	CST	(F11.8)	[3/99] Astrometric SNR (cluster significance test) (2)	[ucd=stat.snr]
+#Column	N	(I6)	[10/153797] Number of member stars	[ucd=meta.number]
+#Column	CSTt	(F11.8)	[2.9/99] Astrometric SNR within tidal radius	[ucd=stat.snr]
+#Column	Nt	(I5)	[10/53464] Number of stars within tidal radius	[ucd=meta.number]
+#Column	RA_ICRS	(F12.8)	Right ascension of densest point (ICRS) at Ep=2016.0	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F12.8)	Declination of densest point (ICRS) at Ep=2016.0	[ucd=pos.eq.dec;meta.main]
+#Column	GLON	(F12.8)	Galactic longitude	[ucd=pos.galactic.lon]
+#Column	GLAT	(E10.3)	Galactic latitude	[ucd=pos.galactic.lat]
+#Column	r50	(F11.8)	Radius containing 50% of members within the tidal radius	[ucd=phys.angSize]
+#Column	rc	(F11.8)	Core radius (approximate estimate)	[ucd=phys.angSize;src]
+#Column	rt	(F11.8)	Tidal radius (approximate estimate)	[ucd=phys.angSize;src]
+#Column	rtot	(F11.8)	Total radius (including tidal tails, coma, etc)	[ucd=phys.angSize]
+#Column	r50pc	(F13.8)	Radius containing 50% of members in parsecs	[ucd=phys.size.radius]
+#Column	rcpc	(F13.8)	Core radius in parsecs	[ucd=phys.size.radius]
+#Column	rtpc	(F13.8)	Tidal radius in parsecs	[ucd=phys.size.radius]
+#Column	rtotpc	(F13.8)	Total radius in parsecs	[ucd=phys.size.radius]
+#Column	pmRA	(F13.8)	Mean proper motion in right ascension multiplied by cos(dec)	[ucd=pos.pm;pos.eq.ra]
+#Column	s_pmRA	(F11.8)	Standard deviation of pmra	[ucd=stat.stdev]
+#Column	e_pmRA	(F11.8)	Standard error of pmra	[ucd=stat.error;pos.pm;pos.eq.ra]
+#Column	pmDE	(F12.8)	Mean proper motion in declination	[ucd=pos.pm;pos.eq.dec]
+#Column	s_pmDE	(F11.8)	Standard deviation of pmdec	[ucd=stat.stdev]
+#Column	e_pmDE	(F11.8)	Standard error of pmdec	[ucd=stat.error;pos.pm;pos.eq.dec]
+#Column	Plx	(F12.8)	Mean parallax	[ucd=pos.parallax;stat.mean]
+#Column	s_Plx	(F11.8)	Standard deviation of parallax	[ucd=stat.stdev;pos.parallax]
+#Column	e_Plx	(F11.8)	Standard error of parallax	[ucd=stat.error;pos.parallax]
+#Column	dist16	(F15.8)	16th percentile of maximum likelihood distance	[ucd=pos.distance]
+#Column	dist50	(F15.8)	50th percentile of maximum likelihood distance	[ucd=pos.distance]
+#Column	dist84	(F16.8)	84th percentile of maximum likelihood distance	[ucd=pos.distance]
+#Column	Ndist	(I5)	Number of stars used for distance calculation	[ucd=meta.number]
+#Column	globalPlx	(I1)	[0/1] Flag indicating clusters for which a star-by-star parallax offset correction was not possible during distance calculation	[ucd=meta.code]
+#Column	X	(F16.8)	X coordinate in heliocentric galactic coordinates	[ucd=pos.cartesian.x;pos.galactic;pos.heliocentric]
+#Column	Y	(F16.8)	Y coordinate in heliocentric galactic coordinates	[ucd=pos.cartesian.y;pos.galactic;pos.heliocentric]
+#Column	Z	(F16.8)	Z coordinate in heliocentric galactic coordinates	[ucd=pos.cartesian.z;pos.galactic;pos.heliocentric]
+#Column	RV	(F13.8)	? Mean Gaia DR3 radial velocity	[ucd=phys.veloc;pos.heliocentric]
+#Column	s_RV	(F13.8)	? Standard deviation of radial velocity	[ucd=stat.stdev;spect.dopplerVeloc]
+#Column	e_RV	(F13.8)	? Standard error of radial velocity	[ucd=stat.error]
+#Column	n_RV	(I4)	Number of member stars with a radial velocity	[ucd=meta.note]
+#Column	CMDCl2.5	(E10.3)	[0/1] 2.5th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl16	(E10.3)	[0/1] 16th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl50	(F11.8)	[0/1] 50th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl84	(F11.8)	[0/1] 84th percentile of CMD class	[ucd=meta.code]
+#Column	CMDCl97.5	(F11.8)	[0/1] 97.5th percentile of CMD class	[ucd=meta.code]
+#Column	CMDClHuman	(A3)	Human-assigned CMD class (where available) (3)	[ucd=meta.code]
+#Column	logAge16	(F11.8)	? 16th percentile of logarithm of cluster age	[ucd=time.age]
+#Column	logAge50	(F11.8)	? 50th percentile of logarithm of cluster age	[ucd=time.age]
+#Column	logAge84	(F12.8)	? 84th percentile of logarithm of cluster age	[ucd=time.age]
+#Column	AV16	(E10.3)	? 16th percentile of V-band cluster extinction	[ucd=phys.absorption]
+#Column	AV50	(F11.8)	? 50th percentile of V-band cluster extinction	[ucd=phys.absorption]
+#Column	AV84	(F11.8)	? 84th percentile of V-band cluster extinction	[ucd=phys.absorption]
+#Column	diffAV16	(E10.3)	? 16th percentile of approximate V-band differential extinction	[ucd=phys.absorption;arith.diff]
+#Column	diffAV50	(F11.8)	? 50th percentile of approximate V-band differential extinction	[ucd=phys.absorption;arith.diff]
+#Column	diffAV84	(F11.8)	? 84th percentile of approximate V-band differential extinction	[ucd=phys.absorption;arith.diff]
+#Column	MOD16	(F12.8)	? 16th percentile of photometrically estimated distance modulus	[ucd=phot.mag.distMod]
+#Column	MOD50	(F12.8)	? 50th percentile of photometrically estimated distance modulus	[ucd=phot.mag.distMod]
+#Column	MOD84	(F12.8)	? 84th percentile of photometrically estimated distance modulus	[ucd=phot.mag.distMod]
+#Column	r50J	(F11.8)	? Radius containing 50% of members within the best fitting Jacobi radius	[ucd=phys.angSize;src]
+#Column	rJ	(F12.8)	? Best fitting Jacobi radius - still defined even for clusters with low Jacobi radius probability	[ucd=phys.angSize;src]
+#Column	r50Jpc	(F12.8)	? Radius containing 50% of members within the Jacobi radius in parsecs	[ucd=phys.size.radius]
+#Column	rJpc	(F13.8)	? Jacobi radius in parsecs	[ucd=phys.size.radius]
+#Column	probJ	(E10.3)	? Probability of the cluster having a valid Jacobi radius	[ucd=stat.fit.goodness]
+#Column	NJ	(I4)	[9/4171]? Number of stars within best-fit Jacobi radius	[ucd=meta.number]
+#Column	MassJ	(F15.8)	? Cluster mass within the Jacobi radius	[ucd=phys.mass]
+#Column	e_MassJ	(F15.8)	? Error on cluster mass within the Jacobi radius	[ucd=stat.error]
+#Column	MassTot	(F15.8)	? Total observed cluster mass	[ucd=phys.mass]
+#Column	e_MassTot	(F15.8)	? Error on total observed cluster mass	[ucd=stat.error]
+#Column	minClSize	(I2)	[-1/80] HDBSCAN parameter used to construct cluster membership list (-1 for membership lists not made with HDBSCAN)	[ucd=meta.code.member;instr.setup]
+#Column	isMerged	(I1)	[0/1] Flag indicating manually merged cluster membership list	[ucd=meta.code]
+#Column	isGMMMemb	(I1)	[0/1] Flag indicating cluster membership list constructed using additional Gaussian mixture model post-processing step	[ucd=meta.code]
+#Column	NXmatches	(I2)	[0/24] Number of unique crossmatches to this cluster	[ucd=meta.number]
+#Column	XmatchType	(a16)	Type of crossmatch (4)	[ucd=meta.code]
+#Column	Note	(a33)	Reason why cluster was rejected	[ucd=meta.note]
+#Column	_RA.icrs	(F12.8)	Right ascension (ICRS) at Epoch=J2000, proper motions taken into account	[ucd=pos.eq.ra]
+#Column	_DE.icrs	(F12.8)	Declination (ICRS) at Epoch=J2000, proper motions taken into account	[ucd=pos.eq.dec]
+recno	Name	ID	AllNames	Type	CST	N	CSTt	Nt	RA_ICRS	DE_ICRS	GLON	GLAT	r50	rc	rt	rtot	r50pc	rcpc	rtpc	rtotpc	pmRA	s_pmRA	e_pmRA	pmDE	s_pmDE	e_pmDE	Plx	s_Plx	e_Plx	dist16	dist50	dist84	Ndist	globalPlx	X	Y	Z	RV	s_RV	e_RV	n_RV	CMDCl2.5	CMDCl16	CMDCl50	CMDCl84	CMDCl97.5	CMDClHuman	logAge16	logAge50	logAge84	AV16	AV50	AV84	diffAV16	diffAV50	diffAV84	MOD16	MOD50	MOD84	r50J	rJ	r50Jpc	rJpc	probJ	NJ	MassJ	e_MassJ	MassTot	e_MassTot	minClSize	isMerged	isGMMMemb	NXmatches	XmatchType	Note	_RA.icrs	_DE.icrs
+ 	 	 	 	 	 	 	 	 	deg	deg	deg	deg	deg	deg	deg	deg	pc	pc	pc	pc	mas/yr	mas/yr	mas/yr	mas/yr	mas/yr	mas/yr	mas	mas	mas	pc	pc	pc	 	 	pc	pc	pc	km/s	km/s	km/s	 	 	 	 	 	 	 	[yr]	[yr]	[yr]	mag	mag	mag	mag	mag	mag	mag	mag	mag	deg	deg	pc	pc	 	 	Msun	Msun	Msun	Msun	 	 	 	 	 	 	deg	deg
+--------	--------------------	----	-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	-	-----------	------	-----------	-----	------------	------------	------------	----------	-----------	-----------	-----------	-----------	-------------	-------------	-------------	-------------	-------------	-----------	-----------	------------	-----------	-----------	------------	-----------	-----------	---------------	---------------	----------------	-----	-	----------------	----------------	----------------	-------------	-------------	-------------	----	----------	----------	-----------	-----------	-----------	---	-----------	-----------	------------	----------	-----------	-----------	----------	-----------	-----------	------------	------------	------------	-----------	------------	------------	-------------	----------	----	---------------	---------------	---------------	---------------	--	-	-	--	----------------	---------------------------------	------------	------------
+    5499	Theia_58            	5495	OCSN_83,Theia_58                                                                                                                                                                                                                                             	o	21.50097338	   288	21.50097338	  288	120.21633474	-30.74983592	247.81858696	-2.845e-01	 1.22518208	 1.52313756	 3.89102026	 3.89102026	  10.35652958	  12.87623407	  32.93663823	  32.93663823	  -8.81621627	 0.42352097	 0.02495621	  5.51969883	 0.26460072	 0.01559175	  2.03808812	 0.08183059	 0.00482191	   483.87883789	   484.25046489	    484.62266315	  229	0	  -8304.80120601	   -448.40689354	     18.86311307	  27.13958883	   6.32728698	   0.77883519	  66	 9.591e-01	 9.887e-01	 0.99408752	 0.99990410	 0.99990410	   	 7.10951662	 7.37285185	  7.64742947	 3.902e-03	 0.15114039	 0.24241063	 1.471e-01	 0.57144415	 0.91899443	  8.26288795	  8.40672588	  8.60158157	 0.38358978	  0.68096112	  3.24205911	   5.75559436	 1.000e+00	  72	    68.29736593	     8.18708833	   298.09181326	    21.71373419	10	0	0	 2	1:m             	                                 	120.21638033	-30.74986045
+

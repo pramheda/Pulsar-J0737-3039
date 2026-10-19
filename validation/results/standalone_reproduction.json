@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "mode": "quick",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "astropy": "8.0.2",
+    "matplotlib": "3.11.2",
+    "galpy": "1.12.0"
+  },
+  "commands": [
+    {
+      "script": "trajectory/code/monte_carlo.py",
+      "arguments": [
+        "--n",
+        "512",
+        "--position",
+        "published"
+      ],
+      "returncode": 0,
+      "log": "run_00.log"
+    },
+    {
+      "script": "trajectory/code/monte_carlo.py",
+      "arguments": [
+        "--n",
+        "512",
+        "--position",
+        "corrected_coordinates"
+      ],
+      "returncode": 0,
+      "log": "run_01.log"
+    },
+    {
+      "script": "audit/code/figure_vector.py",
+      "arguments": [],
+      "returncode": 0,
+      "log": "run_02.log"
+    },
+    {
+      "script": "audit/code/invert_vector_tracks.py",
+      "arguments": [],
+      "returncode": 0,
+      "log": "run_03.log"
+    },
+    {
+      "script": "audit/code/inversion_controls.py",
+      "arguments": [],
+      "returncode": 0,
+      "log": "run_04.log"
+    },
+    {
+      "script": "validation/code/ode_check.py",
+      "arguments": [],
+      "returncode": 0,
+      "log": "run_05.log"
+    }
+  ],
+  "paired_reproduction": [
+    {
+      "branch": "published",
+      "n": 512,
+      "event_flags_equal": true,
+      "max_minimum_difference_pc": 0.0
+    },
+    {
+      "branch": "corrected_coordinates",
+      "n": 512,
+      "event_flags_equal": true,
+      "max_minimum_difference_pc": 0.0
+    }
+  ],
+  "figure_inversion_ra_difference_deg": 0.0,
+  "figure_minimum_sky_separation_difference_deg": 0.0,
+  "seconds": 26.53795212507248,
+  "scope": "Fresh rerun of this independent audit; does not recover the paper authors' original execution.",
+  "log_paths_scope": "Subprocess logs are local to the reproduction directory; running reproduce.py regenerates them."
+}

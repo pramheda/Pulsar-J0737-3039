@@ -1,0 +1,6 @@
+# Recorded scientific environment; Python 3.12.
+numpy==2.5.4
+scipy==1.18.1
+astropy==8.0.2
+matplotlib==3.11.2
+galpy==1.12.0
