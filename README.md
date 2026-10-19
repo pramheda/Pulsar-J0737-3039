@@ -13,7 +13,13 @@ This repository contains the evidence, code, and saved results.
 | Right ascension | 144.448° | 114.4635338125° |
 | Declination | −30.6278° | −30.6613069028° |
 
-The wrong values appear in both the [manuscript table](sources/yu2026_table1_J0737.tex) and the [publisher's data table](sources/yu2026_table1_J0737.tsv). The measured values come from [Kramer et al. (2021)](https://arxiv.org/abs/2112.06795), at epoch MJD 55045. Adjusting for the pulsar's motion to 2016 changes its position by only **0.021 arcseconds**—far too little to explain the error.
+**Why 114.4635° is correct:** [Kramer et al. (2021), Table IV](https://arxiv.org/pdf/2112.06795#page=20) report **07h 37m 51.248115s**, measured from the arrival times of radio pulses. Right ascension uses 24 hours for a full 360° circle, so each hour equals 15°:
+
+```text
+15 × (7 + 37/60 + 51.248115/3600) = 114.4635338125°
+```
+
+The wrong values appear in both the [manuscript table](sources/yu2026_table1_J0737.tex) and the [publisher's data table](sources/yu2026_table1_J0737.tsv). The measured position is at epoch MJD 55045. Adjusting for the pulsar's motion to 2016 changes its position by only **0.021 arcseconds**—far too little to explain the error.
 
 ## Correcting the position changes the result
 
