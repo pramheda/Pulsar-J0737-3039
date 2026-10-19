@@ -1,55 +1,86 @@
-# Pulsar J0737−3039: coordinate-error audit of Yu et al. (2026)
+# J0737−3039: a sky-position error in a published birthplace study
 
-**The position printed for J0737−3039 in Yu et al. (2026) is wrong by about 25.719° on the sky. Changing only that position removes the sampled encounters with both highlighted birth-cluster candidates in the controlled calculations archived here. The numerical geometry of the published trajectory figure also points to the wrong sky region.**
+A 2026 astronomy paper tried to find where the double pulsar **J0737−3039** was born. It traced the system's motion backwards to see whether it passed close to star clusters that could have been its birthplace.
 
-This repository contains the J0737−3039 evidence, analysis code, saved Monte Carlo histories, and numerical controls. The paper is [*Kinematic Evidence for Open Cluster Origins of Galactic Binary Neutron Stars*, ApJL **1000**, L25](https://doi.org/10.3847/2041-8213/ae4bd1), by Wen-Jie Yu and colleagues; the inspected manuscript is [arXiv:2602.14145v1](https://arxiv.org/abs/2602.14145v1).
+**The paper puts the pulsar in the wrong place on the sky—about 25.7° away from its measured position. In our reconstruction, correcting that position removes the close passes to both proposed clusters in the main simulations.**
 
-**What is established:** the published coordinate error, its causal effect in an explicit two-cluster reanalysis, and a strong conditional inconsistency between the published figure and the primary pulsar position. **What is not established:** the exact inputs used by every original calculation. The authors' numerical execution bundle was not recovered. This is an independent audit, not an author-issued correction.
+This matters because those close passes are the evidence for linking the pulsar to the clusters **Theia 58** and **OC 0450**. Our results show that these proposed birthplace links need to be reassessed. They do not tell us where the pulsar was actually born.
 
-## 1. The coordinate discrepancy
+This repository contains the source records, code, saved results, and checks behind that finding. The paper examined is [*Kinematic Evidence for Open Cluster Origins of Galactic Binary Neutron Stars*](https://doi.org/10.3847/2041-8213/ae4bd1), by Yu and colleagues, published in *The Astrophysical Journal Letters* in 2026 ([manuscript examined](https://arxiv.org/abs/2602.14145v1)).
+
+## What we found
+
+| Check | Result | Why it matters |
+|---|---|---|
+| Compare the paper's sky position with the measured position | They differ by about **25.7°**. | The published position is wrong. |
+| Trace possible past paths using the paper's position | Close passes to both clusters occur at rates similar to those reported in the paper. | Our separate calculation approximately reproduces the reported result. |
+| Repeat with only the sky position corrected | **No close passes** to either cluster in the main samples of 32,768 possible paths. | The position error can change the birthplace inference. |
+| Examine the path drawn in the paper's own figure | Under the model tested, it points toward the wrong sky region too. | There is evidence that the problem affected the plotted calculation, beyond the table entry. |
+
+**Certainty and limits:** The incorrect published position is directly checkable. Its effect is demonstrated in our reconstruction. The figure provides further evidence, but we do not have the authors' original calculation files, so we cannot establish exactly what went into every original run. This is an independent audit, not a correction issued by the authors.
+
+## What changes when the position is corrected?
+
+We simulated **32,768 possible past paths** to account for uncertain measurements and unknown motion toward or away from us. For each path, we ran the calculation twice: once with the paper's position and once with the corrected position. Everything else—including the random draws—stayed the same.
+
+The table shows how often the pulsar passed close enough to each cluster to meet the experiment's encounter criterion. These are **fractions of simulated paths**, not probabilities that a cluster really was the birthplace.
+
+| Possible birthplace | Paper's reported fraction | Our calculation: paper's position | Our calculation: corrected position |
+|---|---:|---:|---:|
+| Theia 58 | 5.35% | **5.26%** (1,725 of 32,768) | **0 of 32,768** |
+| OC 0450 | 13.87% | **13.78%** (4,514 of 32,768) | **0 of 32,768** |
+
+![How correcting the sky position changes the closest past approach to Theia 58 and OC 0450](trajectory/results/coordinate_effect.png)
+
+These results use the paper's Gaussian-mixture assumption for the unknown radial velocity. A second experiment using a uniform radial-velocity distribution also found no corrected-position encounters in 32,768 paths for either cluster. Its result for Theia 58 with the paper's position differed modestly from the published number; that mismatch is documented.
+
+**Zero in a simulation does not mean impossible in nature.** In a separate test allowing broader uncertainties in the cluster motions, one corrected-position path out of 4,096 passed close to OC 0450. The conclusion is that the reported links are sensitive to the position error and require reassessment, not that these clusters are ruled out under every assumption.
+
+## The evidence in detail
+
+### 1. The published sky position is wrong
+
+Astronomers specify a sky position using right ascension and declination, similar to longitude and latitude.
 
 | Source | Right ascension (degrees) | Declination (degrees) |
 |---|---:|---:|
-| Yu et al., Table 1 | 144.448 | −30.6278 |
-| Kramer et al. (2021), primary timing position, MJD 55045 | 114.4635338125 | −30.6613069028 |
-| Primary position propagated to 2016.0 for this experiment | 114.4635284939 | −30.6613031921 |
+| Yu et al. (2026), Table 1 | 144.448 | −30.6278 |
+| Kramer et al. (2021), measured timing position at MJD 55045 | 114.4635338125 | −30.6613069028 |
+| Measured position adjusted to 2016.0 for our calculation | 114.4635284939 | −30.6613031921 |
 
-The erroneous values appear in the [author's TeX row](sources/yu2026_table1_J0737.tex) and the [publisher's machine-readable row](sources/yu2026_table1_J0737.tsv), as well as the manuscript table. The [primary timing input and citation](trajectory/data/J0737_primary_position.json) give RA **07:37:51.248115** and Dec **−30:39:40.70485**. J2000 is the equinox, not the position epoch. Proper motion to 2016 changes the position by only about **0.021 arcseconds**.
+The incorrect values appear in the [manuscript's table source](sources/yu2026_table1_J0737.tex) and the [publisher's machine-readable table](sources/yu2026_table1_J0737.tsv). The measured position comes from [Kramer et al. (2021)](https://arxiv.org/abs/2112.06795); the exact input and citation are recorded in [J0737_primary_position.json](trajectory/data/J0737_primary_position.json).
 
-Run the coordinate check without installing any scientific packages:
+The separation on the sky is **25.719°**. The pulsar's motion between the measurement epoch and 2016 changes its position by only about **0.021 arcseconds**, far too little to explain the discrepancy. J2000 specifies the coordinate equinox, not the measurement date. We have not established how the wrong numbers entered the paper.
+
+You can check the coordinate discrepancy with Python alone, without installing scientific packages:
 
 ```bash
 python3 scripts/check_coordinates.py
 ```
 
-## 2. Changing only the coordinates changes the encounter result
+### 2. The paper's own trajectory figure also points to a problem
 
-The Gaussian-prior experiment uses **32,768 paired histories**. Both branches share the distance, proper motions, uncertainties, random draws, cluster inputs, Galactic potential, and encounter criterion. Only the pulsar's RA and Dec change.
+We extracted the numerical drawing coordinates directly from the [published Figure 2 PDF](audit/sources/j0737_oc_orbits.pdf), then fitted an orbital model to the pulsar's drawn path.
 
-| Cluster | Paper's reported fraction | Replay with printed coordinates | Same replay with corrected coordinates |
-|---|---:|---:|---:|
-| Theia 58 | 5.35% | 1,725 / 32,768 = **5.2643%** | **0 / 32,768** |
-| OC 0450 | 13.87% | 4,514 / 32,768 = **13.7756%** | **0 / 32,768** |
+With the tested Galactic model, coordinate frame, and interpretation of the figure's timing, the fitted present-day right ascension is about **144.526°**—near the paper's incorrect value, rather than the measured **114.464°**. Allowing the curve's time placement to vary over 0–24 million years still leaves the inferred sky position at least **24.252°** from the measured position.
 
-For each zero-event result, the one-sided 95% binomial upper bound is **0.00914%**, conditional on that sampled model. Zero sampled encounters does **not** establish zero physical probability. An encounter fraction is also not a posterior probability that a cluster is the birthplace.
+This supports the interpretation that the error affected the plotted calculation. It does not recover the authors' exact inputs or exclude every possible plotting convention. We checked the fitting method using artificial trajectories with known inputs, different starting guesses, and small perturbations to the extracted figure coordinates.
 
-![Paired coordinate experiment: minimum past separation from Theia 58 and OC 0450](trajectory/results/coordinate_effect.png)
+We also retain checks that did not succeed: the initial attempt to reproduce the figure failed for the cluster paths as well as the pulsar path. Alternative coordinate-frame choices improved the comparison without matching it exactly. Those failures limit what can be claimed from a figure mismatch alone.
 
-The independent uniform-radial-prior experiment also gives **0 / 32,768** corrected-coordinate encounters for both clusters. Its printed-coordinate Theia result differs modestly from the paper; that mismatch is retained. The complete arrays and summaries are in [trajectory/results](trajectory/results/).
+The numerical records are in [figure extraction](audit/results/vector_figure.json), [orbit fitting](audit/results/vector_inversion.json), [known-input checks](audit/results/inversion_controls.json), and [coordinate-frame checks](audit/results/frame_counterchecks.json).
 
-## 3. Evidence beyond a table typo: the actual published figure
+### 3. What the result does—and does not—change
 
-The audit extracts vector vertices directly from the [author-supplied Figure 2 PDF](audit/sources/j0737_oc_orbits.pdf). Under the declared Galactic potential and spatial frame, fitting its red trajectory gives a present-day RA near **144.526°**, rather than **114.464°**, for the tested caption-based timing interpretation.
+The finding concerns the proposed link between **J0737−3039 and two specific clusters**. It does not establish a new birthplace, test every cluster, revise other binary systems, or by itself overturn a general theory of how double neutron stars form.
 
-Freeing the curve's temporal placement over 0–24 Myr still leaves a minimum separation of **24.252°** from the primary pulsar position. Synthetic trajectories at both the correct and printed positions, multiple fitting starts, and bounded figure-quantization perturbations test the inversion method.
+For each zero-encounter result in the main experiment, the one-sided 95% binomial upper bound is **0.00914%**, conditional on the sampled model. This bounds that model's encounter fraction; it is not a bound on the physical probability of a birthplace.
 
-This is strong evidence that the plotted numerical trajectory is inconsistent with the real J0737−3039 position under the tested model. It is **not** an exact recovery of the authors' inputs or proof of global uniqueness across every possible plotting convention. The initial nominal figure replay failed, including for the cluster curves; the frame counterchecks documenting that failure are retained.
+Stronger astrophysical conclusions would require the authors' original calculation files, a corrected search across the full cluster catalogue, and a model that compares genuine birth associations with chance close passes. See [methods and limitations](docs/METHODS_AND_LIMITATIONS.md) for the assumptions, sensitivity tests, and unresolved questions.
 
-Inspect [vector extraction](audit/results/vector_figure.json), [trajectory inversion](audit/results/vector_inversion.json), [synthetic recovery controls](audit/results/inversion_controls.json), and [frame alternatives](audit/results/frame_counterchecks.json).
+## Run the checks yourself
 
-## Reproduce and inspect
-
-Python 3.12 was used. The recorded package versions are pinned in [requirements.txt](requirements.txt).
+Python 3.12 was used. Package versions are recorded in [requirements.txt](requirements.txt).
 
 ```bash
 python3 -m venv .venv
@@ -58,19 +89,23 @@ python3 -m venv .venv
 .venv/bin/python scripts/reproduce.py --quick
 ```
 
-The quick run recalculates paired 512-history trajectories, checks them against the corresponding archived histories, re-extracts the figure vertices, reruns the figure inversion and its controls, and checks selected trajectories with the independent ODE implementation. Recalculated files go into the ignored `reproduced/` directory; the archived evidence is preserved.
+`verify.py` checks the saved evidence and file checksums. The quick reproduction recalculates 512 paired paths, compares them with the archived results, repeats the figure analysis and its checks, and checks selected paths with a separately implemented orbit integrator. New results go into `reproduced/`.
+
+To recalculate the full archived experiment and sensitivity tests:
 
 ```bash
-# Recalculate the full archived experiment and robustness checks:
 .venv/bin/python scripts/reproduce.py --full
 ```
 
-See [reproduction details](docs/REPRODUCING.md), [methods and limitations](docs/METHODS_AND_LIMITATIONS.md), and the [claim-to-evidence map](docs/EVIDENCE.md). [SHA256SUMS](SHA256SUMS) and [export provenance](provenance/EXPORT.json) identify the exact files. Third-party figure attribution and licensing are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+## Where to find things
 
-## Scientific implication and scope
+| What you want to inspect | Where to look |
+|---|---|
+| Evidence supporting each claim | [Evidence guide](docs/EVIDENCE.md) |
+| Assumptions, limitations, and unsuccessful checks | [Methods and limitations](docs/METHODS_AND_LIMITATIONS.md) |
+| Instructions for repeating the calculations | [Reproduction guide](docs/REPRODUCING.md) |
+| Saved path simulations and summaries | [Trajectory results](trajectory/results/) |
+| File checksums and records of where the files came from | [SHA256SUMS](SHA256SUMS), [export record](provenance/EXPORT.json) |
+| Attribution and licensing for third-party material | [Third-party notices](THIRD_PARTY_NOTICES.md) |
 
-The claimed J0737−3039 encounters with **Theia 58 and OC 0450 require reassessment**: the coordinate-only counterfactual removes them in the declared model, and the published figure provides additional evidence of a propagated position problem. This repository does not establish a new birthplace, revise all clusters or other binary systems, measure a natal kick, or overturn a binary-neutron-star formation channel in general.
-
-One broader-uncertainty test produced **one** corrected-coordinate OC 0450 encounter in 4,096 histories; it is included. That result rules out describing the finding as universal impossibility. Exact execution provenance, a corrected full-catalog search, and a separately defined physical-origin/null model remain necessary for stronger conclusions.
-
-Audit performed on 19 October 2026 with AI-assisted scientific computation. Agreement between analysis branches is treated as a check of implementations, not as independent astronomical observations. No author endorsement is implied.
+Audit performed on 19 October 2026 with AI-assisted scientific computation. Agreement between calculations checks the software; it does not constitute new independent astronomical observations. No author endorsement is implied.
